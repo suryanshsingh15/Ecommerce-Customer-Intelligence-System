@@ -1,0 +1,48 @@
+product_id,product_name,category,price
+1,Wireless Earbuds,Electronics,620.58
+2,Bluetooth Speaker,Electronics,383.19
+3,Smartwatch,Electronics,2677.37
+4,Laptop Stand,Electronics,2035.58
+5,USB-C Hub,Electronics,1614.65
+6,Power Bank 10000mAh,Electronics,684.26
+7,Mechanical Keyboard,Electronics,5777.18
+8,Wireless Mouse,Electronics,5040.36
+9,Webcam HD,Electronics,3514.91
+10,Portable SSD 1TB,Electronics,5712.1
+11,Men's Cotton T-Shirt,Fashion,5997.5
+12,Women's Kurti,Fashion,4082.85
+13,Denim Jacket,Fashion,1726.64
+14,Running Shoes,Fashion,385.36
+15,Leather Wallet,Fashion,4574.17
+16,Sunglasses,Fashion,2902.43
+17,Formal Shirt,Fashion,3961.33
+18,Women's Handbag,Fashion,5509.03
+19,Sports Cap,Fashion,1211.71
+20,Sneakers,Fashion,3574.18
+21,Non-Stick Pan Set,Home & Kitchen,3863.49
+22,Electric Kettle,Home & Kitchen,3026.6
+23,LED Desk Lamp,Home & Kitchen,683.77
+24,Air Fryer,Home & Kitchen,2185.57
+25,Cotton Bedsheet Set,Home & Kitchen,2099.85
+26,Vacuum Flask,Home & Kitchen,4070.28
+27,Ceramic Dinner Set,Home & Kitchen,5167.74
+28,Storage Organizer Box,Home & Kitchen,2079.35
+29,Face Wash 100ml,Beauty,
+30,Sunscreen SPF50,Beauty,1836.07
+31,Lip Balm Pack,Beauty,5679.38
+32,Hair Serum,Beauty,
+33,Body Lotion 200ml,Beauty,3368.07
+34,Shampoo 340ml,Beauty,2810.73
+35,Fiction Bestseller,Books,1989.93
+36,Self-Help Book,Books,2041.15
+37,Children's Story Set,Books,5825.58
+38,Cookbook,Books,2514.42
+39,Business Strategy Book,Books,3160.39
+40,Yoga Mat,Sports,5930.5
+41,Adjustable Dumbbell Set,Sports,
+42,Cricket Bat,Sports,3324.17
+43,Football,Sports,2567.5
+44,Resistance Bands Set,Sports,1247.36
+45,Skipping Rope,Sports,2266.41
+1,Wireless Earbuds,Electronics,620.58
+6,Power Bank 10000mAh,Electronics,684.26

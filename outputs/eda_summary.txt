@@ -1,0 +1,58 @@
+======================================================================
+E-COMMERCE CUSTOMER INTELLIGENCE SYSTEM — DATA CLEANING & EDA REPORT
+======================================================================
+
+Raw row counts -> customers: 156, products: 47, orders: 522, order_items: 972
+
+--- Cleaning: customers ---
+Removed 6 exact duplicate customer rows.
+Missing emails: 2 (flagged as 'unknown@example.com')
+Standardized city names (e.g. 'bengaluru'/'Bangalore' -> 'Bengaluru'). Missing city values (6) set to 'Unknown'.
+
+--- Cleaning: products ---
+Removed 2 duplicate product_id rows.
+Imputed 3 missing product prices using category median.
+
+--- Cleaning: orders ---
+Removed 2 duplicate order_id rows.
+Dropped 21 orders with missing order_date (cannot be reliably imputed).
+Removed 0 orders with an orphan customer_id.
+
+--- Cleaning: order_items ---
+Removed 0 duplicate order_item_id rows.
+Filled 25 missing line-item prices from the product master.
+Removed 13 order_item rows with invalid (zero/negative) quantity.
+Removed 33 order_item rows tied to dropped/invalid orders.
+
+Clean row counts -> customers: 150, products: 45, orders: 499, order_items: 926
+
+Clean tables written to database: customers, products, orders, order_items
+
+======================================================================
+EXPLORATORY DATA ANALYSIS
+======================================================================
+
+Total revenue (Delivered/Shipped orders): Rs. 2,259,427.95
+Total fulfilled orders: 282
+Average Order Value (AOV): Rs. 8,012.16
+
+Order value stats -> mean: 8012.16, median: 6500.98, std: 5632.99, min: 385.36, max: 34522.31
+
+Top 5 customers by revenue:
+  Ayaan Singh          Rs. 62,554.81
+  Sai Kapoor           Rs. 61,655.42
+  Riya Nair            Rs. 56,655.66
+  Aditya Pillai        Rs. 55,149.01
+  Vivaan Reddy         Rs. 52,633.92
+
+Customers with >=2 orders (repeat customers): 97 of 126 (77.0%)
+
+Revenue by category:
+  Fashion            Rs. 502,475.15
+  Electronics        Rs. 428,453.17
+  Beauty             Rs. 377,944.88
+  Sports             Rs. 369,245.09
+  Home & Kitchen     Rs. 327,373.19
+  Books              Rs. 253,936.47
+
+Saved 4 charts to: C:\Users\91827\Desktop\ecommerce-customer-intelligence\outputs

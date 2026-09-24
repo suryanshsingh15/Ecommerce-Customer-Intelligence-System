@@ -1,0 +1,169 @@
+==============================================================================
+1. REVENUE TRENDS — monthly revenue, using a JOIN + aggregation
+==============================================================================
+order_month  total_orders  monthly_revenue  avg_order_value
+    2024-01             8         58136.50          7267.06
+    2024-02            18        140256.04          7792.00
+    2024-03            10         86863.07          8686.31
+    2024-04            12         88815.19          7401.27
+    2024-05            14        130019.29          9287.09
+    2024-06             7         55983.82          7997.69
+    2024-07            10         66210.00          6621.00
+    2024-08            13        110503.37          8500.26
+    2024-09            13         66983.46          5152.57
+    2024-10            12        125940.12         10495.01
+    2024-11            14        125125.86          8937.56
+    2024-12            11         94457.11          8587.01
+    2025-01            11         82572.38          7506.58
+    2025-02             7         64391.61          9198.80
+    2025-03            12        135924.08         11327.01
+    2025-04            11         93959.38          8541.76
+    2025-05            12         82210.86          6850.90
+    2025-06            12         92439.10          7703.26
+    2025-07            14        110848.77          7917.77
+    2025-08            18        129950.07          7219.45
+    2025-09            12         80541.26          6711.77
+    2025-10             8         63362.27          7920.28
+    2025-11             6         33186.32          5531.05
+    2025-12            17        140748.02          8279.30
+
+==============================================================================
+2. TOP 10 CUSTOMERS BY REVENUE — JOIN across 3 tables + aggregation
+==============================================================================
+ customer_id customer_name      city  total_orders  total_spent
+         148   Ayaan Singh     Delhi             7     62554.81
+          40    Sai Kapoor    Mumbai             6     61655.42
+          30     Riya Nair Bengaluru             7     56655.66
+          36 Aditya Pillai    Mumbai             7     55149.01
+          39  Vivaan Reddy Bengaluru             5     52633.92
+          74   Aarav Reddy    Mumbai             4     52518.26
+          53     Diya Iyer Bengaluru             3     47424.62
+           8    Riya Reddy     Delhi             5     47293.61
+           1   Rohan Reddy Bengaluru             4     46799.95
+          32    Riya Singh      Pune             3     44260.82
+
+==============================================================================
+3. REPEAT PURCHASE CUSTOMERS — CTE + HAVING
+==============================================================================
+ repeat_customer_count  total_customers_with_orders  repeat_rate_pct
+                    97                          126             77.0
+
+==============================================================================
+3b. Detail view: each repeat customer with their order count and total spend
+==============================================================================
+customer_name  order_count  total_spent
+  Ayaan Singh           10     62554.81
+   Sai Kapoor            8     61655.42
+    Riya Nair           11     56655.66
+Aditya Pillai            9     55149.01
+ Vivaan Reddy           10     52633.92
+  Aarav Reddy            4     52518.26
+    Diya Iyer            5     47424.62
+   Riya Reddy            5     47293.61
+  Rohan Reddy           10     46799.95
+   Riya Singh            9     44260.82
+
+==============================================================================
+4. PRODUCT PERFORMANCE — revenue and units sold per product, by category
+==============================================================================
+      category            product_name  units_sold  total_revenue
+        Sports                Yoga Mat          26      154193.00
+   Electronics        Portable SSD 1TB          20      114242.00
+         Books    Children's Story Set          17       99034.86
+        Beauty           Lip Balm Pack          17       96549.46
+       Fashion                Sneakers          24       85780.32
+       Fashion    Men's Cotton T-Shirt          14       83965.00
+Home & Kitchen      Ceramic Dinner Set          16       82683.84
+       Fashion          Leather Wallet          17       77760.89
+       Fashion         Women's Handbag          14       77126.42
+        Beauty           Shampoo 340ml          27       75889.71
+        Sports Adjustable Dumbbell Set          23       75674.47
+   Electronics          Wireless Mouse          15       75605.40
+        Beauty              Hair Serum          22       70170.82
+   Electronics     Mechanical Keyboard          12       69326.16
+        Beauty         Face Wash 100ml          20       67377.00
+
+==============================================================================
+5. CATEGORY-LEVEL PERFORMANCE — aggregation with ranking (window function)
+==============================================================================
+      category  total_revenue  revenue_rank
+       Fashion      502475.15             1
+   Electronics      428453.17             2
+        Beauty      377944.88             3
+        Sports      369245.09             4
+Home & Kitchen      327373.19             5
+         Books      253936.47             6
+
+==============================================================================
+6. HIGH-VALUE CUSTOMERS — subquery comparing each customer to the overall
+==============================================================================
+   customer_name  total_spent
+     Ayaan Singh     62554.81
+      Sai Kapoor     61655.42
+       Riya Nair     56655.66
+   Aditya Pillai     55149.01
+    Vivaan Reddy     52633.92
+     Aarav Reddy     52518.26
+       Diya Iyer     47424.62
+      Riya Reddy     47293.61
+     Rohan Reddy     46799.95
+      Riya Singh     44260.82
+      Aadhya Rao     42465.01
+     Kabir Reddy     39945.20
+    Varun Sharma     39777.02
+     Neha Chawla     38008.18
+  Arjun Malhotra     37785.05
+     Ayaan Verma     37259.45
+     Vivaan Nair     37128.00
+      Sai Kapoor     35392.50
+     Rahul Gupta     35278.51
+    Ayaan Pillai     34935.62
+    Aadhya Joshi     33439.72
+     Diya Sharma     32413.02
+     Diya Sharma     32221.35
+   Reyansh Mehta     31906.87
+     Anika Menon     30042.85
+       Rahul Rao     29381.72
+       Sai Reddy     29262.45
+      Rahul Bhat     29207.96
+      Ishaan Rao     27325.43
+      Arjun Iyer     26471.03
+    Kabir Pillai     26397.79
+   Saanvi Pillai     26331.49
+     Ananya Iyer     26047.38
+   Krishna Reddy     25506.28
+   Aditya Chawla     25500.01
+        Sai Iyer     25438.79
+   Ananya Kapoor     22832.69
+Karthik Malhotra     22831.04
+     Aditya Iyer     22103.31
+     Rohan Mehta     21980.85
+     Aarav Reddy     21940.68
+    Aarohi Reddy     21618.05
+      Rohan Bhat     21151.91
+    Aadhya Menon     21141.84
+    Aarohi Menon     20773.08
+
+==============================================================================
+7. CITY-WISE REVENUE — where customers are generating the most revenue
+==============================================================================
+     city  customers  orders   revenue
+Bengaluru         25      67 594768.08
+   Mumbai         17      45 371388.62
+    Delhi         16      43 369099.62
+     Pune         14      29 278975.40
+  Chennai         13      36 208631.36
+  Kolkata          9      22 180004.19
+Hyderabad          8      17 115956.85
+Ahmedabad          5      16  97572.63
+  Unknown          4       7  43031.20
+
+==============================================================================
+8. ORDER STATUS BREAKDOWN — cancellation / return rate
+==============================================================================
+    status  order_count  pct_of_total
+ Delivered          222          44.5
+  Returned           85          17.0
+ Cancelled           79          15.8
+   Shipped           61          12.2
+Processing           52          10.4

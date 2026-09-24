@@ -1,0 +1,927 @@
+order_item_id,order_id,product_id,quantity,unit_price,line_revenue,customer_id,order_date,status,customer_name,email,city,signup_date,product_name,category,price
+1,1001,22,1,3026.6,3026.6,127,2024-12-19,Cancelled,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Electric Kettle,Home & Kitchen,3026.6
+2,1002,1,1,620.58,620.58,66,2024-11-25,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Wireless Earbuds,Electronics,620.58
+3,1002,29,1,4622.23,4622.23,66,2024-11-25,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Face Wash 100ml,Beauty,3089.4
+4,1003,6,1,684.26,684.26,101,2024-08-27,Returned,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Power Bank 10000mAh,Electronics,684.26
+5,1003,9,1,3514.91,3514.91,101,2024-08-27,Returned,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Webcam HD,Electronics,3514.91
+6,1003,40,1,5930.5,5930.5,101,2024-08-27,Returned,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Yoga Mat,Sports,5930.5
+9,1005,15,2,4574.17,9148.34,65,2025-08-27,Cancelled,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Leather Wallet,Fashion,4574.17
+10,1005,45,1,2266.41,2266.41,65,2025-08-27,Cancelled,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Skipping Rope,Sports,2266.41
+11,1006,5,2,1614.65,3229.3,24,2024-04-12,Processing,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,USB-C Hub,Electronics,1614.65
+12,1007,34,1,2810.73,2810.73,80,2024-03-17,Processing,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Shampoo 340ml,Beauty,2810.73
+13,1008,9,1,3514.91,3514.91,1,2025-12-10,Returned,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Webcam HD,Electronics,3514.91
+14,1008,22,3,3026.6,9079.8,1,2025-12-10,Returned,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Electric Kettle,Home & Kitchen,3026.6
+15,1008,32,1,1486.25,1486.25,1,2025-12-10,Returned,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Hair Serum,Beauty,3089.4
+16,1009,2,1,383.19,383.19,141,2025-01-24,Cancelled,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Bluetooth Speaker,Electronics,383.19
+17,1010,42,2,3324.17,6648.34,18,2025-07-08,Delivered,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Cricket Bat,Sports,3324.17
+18,1011,35,1,1989.93,1989.93,148,2024-08-20,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Fiction Bestseller,Books,1989.93
+19,1011,40,1,5930.5,5930.5,148,2024-08-20,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Yoga Mat,Sports,5930.5
+20,1012,45,1,2266.41,2266.41,129,2025-12-21,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Skipping Rope,Sports,2266.41
+21,1013,17,1,3961.33,3961.33,15,2024-02-17,Cancelled,Kabir Verma,kabir.verma15@example.com,Kolkata,2024-11-19,Formal Shirt,Fashion,3961.33
+22,1014,41,1,4020.74,4020.74,36,2025-03-17,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Adjustable Dumbbell Set,Sports,2567.5
+23,1014,1,1,620.58,620.58,36,2025-03-17,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Wireless Earbuds,Electronics,620.58
+24,1015,7,1,5777.18,5777.18,93,2024-06-23,Delivered,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Mechanical Keyboard,Electronics,5777.18
+25,1016,7,1,5777.18,5777.18,124,2025-05-24,Delivered,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Mechanical Keyboard,Electronics,5777.18
+26,1017,34,2,2810.73,5621.46,5,2025-04-21,Shipped,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Shampoo 340ml,Beauty,2810.73
+27,1017,13,1,1726.64,1726.64,5,2025-04-21,Shipped,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Denim Jacket,Fashion,1726.64
+28,1017,23,1,683.77,683.77,5,2025-04-21,Shipped,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,LED Desk Lamp,Home & Kitchen,683.77
+29,1018,1,1,620.58,620.58,58,2024-12-19,Shipped,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Wireless Earbuds,Electronics,620.58
+30,1019,37,1,5825.58,5825.58,129,2025-04-12,Shipped,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Children's Story Set,Books,5825.58
+31,1020,33,1,3368.07,3368.07,122,2025-01-25,Cancelled,Sneha Rao,sneha.rao122@example.com,Delhi,2024-09-08,Body Lotion 200ml,Beauty,3368.07
+32,1021,42,1,3324.17,3324.17,53,2024-01-23,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Cricket Bat,Sports,3324.17
+33,1021,15,2,4574.17,9148.34,53,2024-01-23,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Leather Wallet,Fashion,4574.17
+34,1021,30,2,1836.07,3672.14,53,2024-01-23,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Sunscreen SPF50,Beauty,1836.07
+35,1021,19,1,1211.71,1211.71,53,2024-01-23,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Sports Cap,Fashion,1211.71
+36,1022,3,1,2677.37,2677.37,26,2025-09-12,Processing,Anika Singh,anika.singh26@example.com,Bengaluru,2025-01-17,Smartwatch,Electronics,2677.37
+37,1023,22,2,3026.6,6053.2,118,2025-09-13,Cancelled,Kiara Verma,kiara.verma118@example.com,Delhi,2025-06-29,Electric Kettle,Home & Kitchen,3026.6
+38,1023,23,1,683.77,683.77,118,2025-09-13,Cancelled,Kiara Verma,kiara.verma118@example.com,Delhi,2025-06-29,LED Desk Lamp,Home & Kitchen,683.77
+39,1024,22,1,3026.6,3026.6,71,2025-10-05,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Electric Kettle,Home & Kitchen,3026.6
+40,1025,18,2,5509.03,11018.06,32,2025-03-27,Delivered,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Women's Handbag,Fashion,5509.03
+41,1025,25,2,2099.85,4199.7,32,2025-03-27,Delivered,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Cotton Bedsheet Set,Home & Kitchen,2099.85
+42,1025,45,1,2266.41,2266.41,32,2025-03-27,Delivered,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Skipping Rope,Sports,2266.41
+43,1025,31,3,5679.38,17038.14,32,2025-03-27,Delivered,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Lip Balm Pack,Beauty,5679.38
+44,1026,38,1,2514.42,2514.42,47,2024-10-29,Cancelled,Vivaan Bhat,vivaan.bhat47@example.com,Bengaluru,2024-11-17,Cookbook,Books,2514.42
+45,1027,40,1,5930.5,5930.5,68,2025-07-06,Cancelled,Saanvi Sharma,saanvi.sharma68@example.com,Bengaluru,2024-12-06,Yoga Mat,Sports,5930.5
+46,1028,44,2,1247.36,2494.72,85,2024-09-20,Processing,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Resistance Bands Set,Sports,1247.36
+47,1029,31,2,5679.38,11358.76,66,2024-04-27,Processing,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Lip Balm Pack,Beauty,5679.38
+48,1029,32,1,3089.4,3089.4,66,2024-04-27,Processing,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Hair Serum,Beauty,3089.4
+49,1029,8,2,5040.36,10080.72,66,2024-04-27,Processing,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Wireless Mouse,Electronics,5040.36
+50,1030,37,3,5825.58,17476.739999999998,116,2025-11-23,Returned,Meera Singh,meera.singh116@example.com,Bengaluru,2025-08-29,Children's Story Set,Books,5825.58
+51,1030,15,1,4574.17,4574.17,116,2025-11-23,Returned,Meera Singh,meera.singh116@example.com,Bengaluru,2025-08-29,Leather Wallet,Fashion,4574.17
+52,1031,7,1,5777.18,5777.18,127,2024-04-02,Returned,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Mechanical Keyboard,Electronics,5777.18
+53,1031,28,1,2079.35,2079.35,127,2024-04-02,Returned,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Storage Organizer Box,Home & Kitchen,2079.35
+54,1032,36,2,2041.15,4082.3,135,2025-08-21,Returned,Krishna Sharma,krishna.sharma135@example.com,Unknown,2025-06-30,Self-Help Book,Books,2041.15
+55,1033,11,1,5997.5,5997.5,56,2025-11-22,Delivered,Riya Patel,riya.patel56@example.com,Hyderabad,2025-10-31,Men's Cotton T-Shirt,Fashion,5997.5
+56,1034,11,2,5997.5,11995.0,30,2024-12-01,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Men's Cotton T-Shirt,Fashion,5997.5
+57,1034,5,1,1614.65,1614.65,30,2024-12-01,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,USB-C Hub,Electronics,1614.65
+58,1035,36,1,2041.15,2041.15,107,2025-12-18,Shipped,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Self-Help Book,Books,2041.15
+59,1035,42,1,3324.17,3324.17,107,2025-12-18,Shipped,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Cricket Bat,Sports,3324.17
+60,1036,6,1,684.26,684.26,24,2024-02-08,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Power Bank 10000mAh,Electronics,684.26
+61,1036,32,1,3972.23,3972.23,24,2024-02-08,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Hair Serum,Beauty,3089.4
+62,1037,36,1,2041.15,2041.15,121,2025-07-04,Delivered,Rohan Rao,rohan.rao121@example.com,Hyderabad,2025-07-05,Self-Help Book,Books,2041.15
+63,1038,40,2,5930.5,11861.0,113,2025-03-05,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Yoga Mat,Sports,5930.5
+64,1038,41,1,2818.82,2818.82,113,2025-03-05,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Adjustable Dumbbell Set,Sports,2567.5
+65,1038,20,2,3574.18,7148.36,113,2025-03-05,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Sneakers,Fashion,3574.18
+66,1039,22,1,3026.6,3026.6,9,2025-09-22,Returned,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Electric Kettle,Home & Kitchen,3026.6
+67,1039,36,1,2041.15,2041.15,9,2025-09-22,Returned,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Self-Help Book,Books,2041.15
+68,1039,40,1,5930.5,5930.5,9,2025-09-22,Returned,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Yoga Mat,Sports,5930.5
+69,1040,23,2,683.77,1367.54,18,2024-08-10,Processing,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,LED Desk Lamp,Home & Kitchen,683.77
+70,1041,34,1,2810.73,2810.73,25,2024-04-11,Cancelled,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Shampoo 340ml,Beauty,2810.73
+71,1042,32,1,3723.48,3723.48,19,2024-03-03,Returned,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Hair Serum,Beauty,3089.4
+72,1042,9,3,3514.91,10544.73,19,2024-03-03,Returned,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Webcam HD,Electronics,3514.91
+73,1042,27,1,5167.74,5167.74,19,2024-03-03,Returned,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Ceramic Dinner Set,Home & Kitchen,5167.74
+74,1043,7,1,5777.18,5777.18,75,2024-04-03,Delivered,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Mechanical Keyboard,Electronics,5777.18
+75,1043,27,1,5167.74,5167.74,75,2024-04-03,Delivered,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Ceramic Dinner Set,Home & Kitchen,5167.74
+76,1044,30,3,1836.07,5508.21,11,2024-02-21,Cancelled,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Sunscreen SPF50,Beauty,1836.07
+77,1044,43,1,2567.5,2567.5,11,2024-02-21,Cancelled,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Football,Sports,2567.5
+78,1044,38,1,2514.42,2514.42,11,2024-02-21,Cancelled,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Cookbook,Books,2514.42
+79,1045,31,1,5679.38,5679.38,36,2025-07-21,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Lip Balm Pack,Beauty,5679.38
+80,1045,33,2,3368.07,6736.14,36,2025-07-21,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Body Lotion 200ml,Beauty,3368.07
+81,1045,12,1,4082.85,4082.85,36,2025-07-21,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Women's Kurti,Fashion,4082.85
+82,1046,25,1,2099.85,2099.85,120,2024-12-02,Delivered,Ananya Bansal,ananya.bansal120@example.com,Pune,2024-06-05,Cotton Bedsheet Set,Home & Kitchen,2099.85
+83,1047,16,1,2902.43,2902.43,142,2024-05-28,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Sunglasses,Fashion,2902.43
+84,1047,18,1,5509.03,5509.03,142,2024-05-28,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Women's Handbag,Fashion,5509.03
+85,1048,39,2,3160.39,6320.78,57,2025-11-07,Delivered,Riya Patel,riya.patel57@example.com,Pune,2024-04-16,Business Strategy Book,Books,3160.39
+86,1049,45,1,2266.41,2266.41,59,2024-11-27,Delivered,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Skipping Rope,Sports,2266.41
+87,1050,36,1,2041.15,2041.15,148,2024-04-26,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Self-Help Book,Books,2041.15
+88,1050,41,2,4166.68,8333.36,148,2024-04-26,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Adjustable Dumbbell Set,Sports,2567.5
+89,1051,42,3,3324.17,9972.51,39,2025-08-30,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Cricket Bat,Sports,3324.17
+90,1052,41,2,4600.53,9201.06,124,2024-02-14,Shipped,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Adjustable Dumbbell Set,Sports,2567.5
+91,1052,21,1,3863.49,3863.49,124,2024-02-14,Shipped,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Non-Stick Pan Set,Home & Kitchen,3863.49
+92,1053,44,1,1247.36,1247.36,32,2025-05-05,Returned,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Resistance Bands Set,Sports,1247.36
+93,1053,35,2,1989.93,3979.86,32,2025-05-05,Returned,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Fiction Bestseller,Books,1989.93
+94,1054,10,1,5712.1,5712.1,30,2024-03-16,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Portable SSD 1TB,Electronics,5712.1
+96,1056,4,1,2035.58,2035.58,14,2025-04-09,Returned,Riya Kapoor,riya.kapoor14@example.com,Pune,2024-11-28,Laptop Stand,Electronics,2035.58
+97,1057,3,1,2677.37,2677.37,80,2024-08-08,Returned,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Smartwatch,Electronics,2677.37
+98,1057,23,2,683.77,1367.54,80,2024-08-08,Returned,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,LED Desk Lamp,Home & Kitchen,683.77
+99,1057,29,2,3433.43,6866.86,80,2024-08-08,Returned,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Face Wash 100ml,Beauty,3089.4
+100,1058,45,1,2266.41,2266.41,66,2025-04-09,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Skipping Rope,Sports,2266.41
+101,1058,19,1,1211.71,1211.71,66,2025-04-09,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Sports Cap,Fashion,1211.71
+102,1058,43,1,2567.5,2567.5,66,2025-04-09,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Football,Sports,2567.5
+103,1059,17,1,3961.33,3961.33,32,2024-11-16,Shipped,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Formal Shirt,Fashion,3961.33
+104,1060,29,2,3938.65,7877.3,71,2024-03-09,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Face Wash 100ml,Beauty,3089.4
+105,1060,15,1,4574.17,4574.17,71,2024-03-09,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Leather Wallet,Fashion,4574.17
+106,1060,41,2,5791.1,11582.2,71,2024-03-09,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Adjustable Dumbbell Set,Sports,2567.5
+107,1061,44,1,1247.36,1247.36,50,2025-01-16,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Resistance Bands Set,Sports,1247.36
+108,1062,8,1,5040.36,5040.36,30,2025-07-29,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Wireless Mouse,Electronics,5040.36
+109,1062,25,1,2099.85,2099.85,30,2025-07-29,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Cotton Bedsheet Set,Home & Kitchen,2099.85
+110,1063,1,2,620.58,1241.16,113,2024-02-22,Shipped,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Wireless Earbuds,Electronics,620.58
+111,1063,22,1,3026.6,3026.6,113,2024-02-22,Shipped,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Electric Kettle,Home & Kitchen,3026.6
+112,1063,30,1,1836.07,1836.07,113,2024-02-22,Shipped,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Sunscreen SPF50,Beauty,1836.07
+113,1064,43,1,2567.5,2567.5,35,2025-06-03,Delivered,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Football,Sports,2567.5
+114,1064,20,1,3574.18,3574.18,35,2025-06-03,Delivered,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Sneakers,Fashion,3574.18
+115,1065,15,3,4574.17,13722.51,61,2025-07-23,Cancelled,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Leather Wallet,Fashion,4574.17
+116,1066,11,1,5997.5,5997.5,8,2025-07-28,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Men's Cotton T-Shirt,Fashion,5997.5
+117,1066,27,1,5167.74,5167.74,8,2025-07-28,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Ceramic Dinner Set,Home & Kitchen,5167.74
+118,1066,35,1,1989.93,1989.93,8,2025-07-28,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Fiction Bestseller,Books,1989.93
+119,1067,40,1,5930.5,5930.5,137,2024-01-30,Delivered,Pooja Mehta,pooja.mehta137@example.com,Bengaluru,2024-01-13,Yoga Mat,Sports,5930.5
+120,1068,42,1,3324.17,3324.17,61,2024-01-07,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Cricket Bat,Sports,3324.17
+121,1068,1,3,620.58,1861.7400000000002,61,2024-01-07,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Wireless Earbuds,Electronics,620.58
+122,1068,8,1,5040.36,5040.36,61,2024-01-07,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Wireless Mouse,Electronics,5040.36
+123,1069,21,3,3863.49,11590.47,85,2024-03-12,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Non-Stick Pan Set,Home & Kitchen,3863.49
+124,1069,25,1,2099.85,2099.85,85,2024-03-12,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Cotton Bedsheet Set,Home & Kitchen,2099.85
+125,1070,34,2,2810.73,5621.46,47,2025-06-27,Delivered,Vivaan Bhat,vivaan.bhat47@example.com,Bengaluru,2024-11-17,Shampoo 340ml,Beauty,2810.73
+126,1071,29,1,3961.44,3961.44,81,2025-01-13,Shipped,Arjun Chawla,arjun.chawla81@example.com,Pune,2025-01-23,Face Wash 100ml,Beauty,3089.4
+127,1071,32,1,711.35,711.35,81,2025-01-13,Shipped,Arjun Chawla,arjun.chawla81@example.com,Pune,2025-01-23,Hair Serum,Beauty,3089.4
+128,1071,3,2,2677.37,5354.74,81,2025-01-13,Shipped,Arjun Chawla,arjun.chawla81@example.com,Pune,2025-01-23,Smartwatch,Electronics,2677.37
+129,1072,14,1,385.36,385.36,40,2025-09-02,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Running Shoes,Fashion,385.36
+130,1072,43,1,2567.5,2567.5,40,2025-09-02,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Football,Sports,2567.5
+131,1073,45,2,2266.41,4532.82,101,2024-02-20,Delivered,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Skipping Rope,Sports,2266.41
+132,1074,5,2,1614.65,3229.3,58,2025-02-28,Shipped,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,USB-C Hub,Electronics,1614.65
+133,1075,22,1,3026.6,3026.6,57,2024-10-17,Processing,Riya Patel,riya.patel57@example.com,Pune,2024-04-16,Electric Kettle,Home & Kitchen,3026.6
+134,1075,3,2,2677.37,5354.74,57,2024-10-17,Processing,Riya Patel,riya.patel57@example.com,Pune,2024-04-16,Smartwatch,Electronics,2677.37
+135,1076,15,1,4574.17,4574.17,113,2025-02-08,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Leather Wallet,Fashion,4574.17
+136,1076,17,1,3961.33,3961.33,113,2025-02-08,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Formal Shirt,Fashion,3961.33
+138,1078,38,2,2514.42,5028.84,62,2024-06-28,Delivered,Ayaan Gupta,ayaan.gupta62@example.com,Pune,2025-03-28,Cookbook,Books,2514.42
+139,1078,3,3,2677.37,8032.11,62,2024-06-28,Delivered,Ayaan Gupta,ayaan.gupta62@example.com,Pune,2025-03-28,Smartwatch,Electronics,2677.37
+140,1079,20,1,3574.18,3574.18,101,2025-07-26,Cancelled,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Sneakers,Fashion,3574.18
+141,1079,39,1,3160.39,3160.39,101,2025-07-26,Cancelled,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Business Strategy Book,Books,3160.39
+142,1079,6,1,684.26,684.26,101,2025-07-26,Cancelled,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Power Bank 10000mAh,Electronics,684.26
+143,1080,26,2,4070.28,8140.56,10,2025-04-15,Delivered,Kabir Patel,kabir.patel10@example.com,Bengaluru,2024-08-26,Vacuum Flask,Home & Kitchen,4070.28
+144,1081,41,1,4112.14,4112.14,66,2025-02-18,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Adjustable Dumbbell Set,Sports,2567.5
+145,1082,42,1,3324.17,3324.17,88,2025-09-24,Processing,Varun Iyer,varun.iyer88@example.com,Chennai,2025-02-28,Cricket Bat,Sports,3324.17
+146,1082,24,1,2185.57,2185.57,88,2025-09-24,Processing,Varun Iyer,varun.iyer88@example.com,Chennai,2025-02-28,Air Fryer,Home & Kitchen,2185.57
+147,1082,1,1,620.58,620.58,88,2025-09-24,Processing,Varun Iyer,varun.iyer88@example.com,Chennai,2025-02-28,Wireless Earbuds,Electronics,620.58
+148,1083,20,3,3574.18,10722.539999999999,46,2025-03-23,Delivered,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,Sneakers,Fashion,3574.18
+149,1083,14,1,385.36,385.36,46,2025-03-23,Delivered,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,Running Shoes,Fashion,385.36
+150,1083,23,1,683.77,683.77,46,2025-03-23,Delivered,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,LED Desk Lamp,Home & Kitchen,683.77
+151,1083,27,1,5167.74,5167.74,46,2025-03-23,Delivered,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,Ceramic Dinner Set,Home & Kitchen,5167.74
+152,1084,4,1,2035.58,2035.58,39,2024-11-13,Cancelled,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Laptop Stand,Electronics,2035.58
+153,1084,36,1,2041.15,2041.15,39,2024-11-13,Cancelled,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Self-Help Book,Books,2041.15
+154,1085,38,1,2514.42,2514.42,129,2024-04-26,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Cookbook,Books,2514.42
+155,1086,42,1,3324.17,3324.17,76,2024-08-29,Delivered,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Cricket Bat,Sports,3324.17
+156,1087,13,1,1726.64,1726.64,39,2024-06-30,Processing,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Denim Jacket,Fashion,1726.64
+157,1088,20,1,3574.18,3574.18,54,2025-04-04,Cancelled,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Sneakers,Fashion,3574.18
+158,1088,45,1,2266.41,2266.41,54,2025-04-04,Cancelled,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Skipping Rope,Sports,2266.41
+159,1089,1,1,620.58,620.58,78,2025-03-26,Delivered,Neha Singh,neha.singh78@example.com,Delhi,2025-03-17,Wireless Earbuds,Electronics,620.58
+160,1090,42,1,3324.17,3324.17,141,2025-08-28,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Cricket Bat,Sports,3324.17
+161,1090,28,1,2079.35,2079.35,141,2025-08-28,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Storage Organizer Box,Home & Kitchen,2079.35
+162,1091,29,2,2998.78,5997.56,54,2025-04-07,Delivered,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Face Wash 100ml,Beauty,3089.4
+163,1091,23,1,683.77,683.77,54,2025-04-07,Delivered,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,LED Desk Lamp,Home & Kitchen,683.77
+164,1092,9,2,3514.91,7029.82,47,2025-09-21,Returned,Vivaan Bhat,vivaan.bhat47@example.com,Bengaluru,2024-11-17,Webcam HD,Electronics,3514.91
+165,1093,41,2,5368.82,10737.64,22,2025-04-05,Delivered,Ayaan Bhat,ayaan.bhat22@example.com,Ahmedabad,2024-01-12,Adjustable Dumbbell Set,Sports,2567.5
+166,1093,5,1,1614.65,1614.65,22,2025-04-05,Delivered,Ayaan Bhat,ayaan.bhat22@example.com,Ahmedabad,2024-01-12,USB-C Hub,Electronics,1614.65
+167,1094,38,3,2514.42,7543.26,78,2024-03-04,Processing,Neha Singh,neha.singh78@example.com,Delhi,2025-03-17,Cookbook,Books,2514.42
+168,1094,14,1,385.36,385.36,78,2024-03-04,Processing,Neha Singh,neha.singh78@example.com,Delhi,2025-03-17,Running Shoes,Fashion,385.36
+169,1095,10,1,5712.1,5712.1,44,2025-05-31,Delivered,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Portable SSD 1TB,Electronics,5712.1
+170,1095,24,1,2185.57,2185.57,44,2025-05-31,Delivered,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Air Fryer,Home & Kitchen,2185.57
+171,1096,33,1,3368.07,3368.07,134,2025-06-19,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Body Lotion 200ml,Beauty,3368.07
+172,1097,43,2,2567.5,5135.0,143,2025-02-22,Cancelled,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Football,Sports,2567.5
+173,1097,16,1,2902.43,2902.43,143,2025-02-22,Cancelled,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Sunglasses,Fashion,2902.43
+174,1098,29,1,5699.96,5699.96,76,2025-10-24,Cancelled,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Face Wash 100ml,Beauty,3089.4
+175,1098,11,3,5997.5,17992.5,76,2025-10-24,Cancelled,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Men's Cotton T-Shirt,Fashion,5997.5
+176,1099,23,1,683.77,683.77,146,2024-09-15,Delivered,Saanvi Bansal,saanvi.bansal146@example.com,Unknown,2025-08-31,LED Desk Lamp,Home & Kitchen,683.77
+177,1099,3,1,2677.37,2677.37,146,2024-09-15,Delivered,Saanvi Bansal,saanvi.bansal146@example.com,Unknown,2025-08-31,Smartwatch,Electronics,2677.37
+178,1100,14,1,385.36,385.36,73,2024-12-24,Shipped,Rohan Pillai,rohan.pillai73@example.com,Delhi,2025-11-26,Running Shoes,Fashion,385.36
+179,1101,30,2,1836.07,3672.14,37,2024-05-12,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Sunscreen SPF50,Beauty,1836.07
+180,1102,7,1,5777.18,5777.18,119,2024-05-10,Delivered,Aarohi Menon,aarohi.menon119@example.com,Bengaluru,2025-03-06,Mechanical Keyboard,Electronics,5777.18
+181,1102,34,2,2810.73,5621.46,119,2024-05-10,Delivered,Aarohi Menon,aarohi.menon119@example.com,Bengaluru,2025-03-06,Shampoo 340ml,Beauty,2810.73
+182,1103,25,1,2099.85,2099.85,25,2024-01-19,Cancelled,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Cotton Bedsheet Set,Home & Kitchen,2099.85
+183,1103,42,2,3324.17,6648.34,25,2024-01-19,Cancelled,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Cricket Bat,Sports,3324.17
+184,1104,15,1,4574.17,4574.17,91,2025-05-12,Delivered,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Leather Wallet,Fashion,4574.17
+185,1105,32,1,5309.9,5309.9,52,2025-06-03,Delivered,Kabir Rao,kabir.rao52@example.com,Delhi,2024-05-14,Hair Serum,Beauty,3089.4
+186,1105,31,1,5679.38,5679.38,52,2025-06-03,Delivered,Kabir Rao,kabir.rao52@example.com,Delhi,2024-05-14,Lip Balm Pack,Beauty,5679.38
+187,1105,39,1,3160.39,3160.39,52,2025-06-03,Delivered,Kabir Rao,kabir.rao52@example.com,Delhi,2024-05-14,Business Strategy Book,Books,3160.39
+188,1106,39,2,3160.39,6320.78,101,2024-05-14,Returned,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Business Strategy Book,Books,3160.39
+189,1107,22,2,3026.6,6053.2,1,2024-06-18,Processing,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Electric Kettle,Home & Kitchen,3026.6
+190,1108,14,1,385.36,385.36,30,2025-09-17,Shipped,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Running Shoes,Fashion,385.36
+191,1108,38,1,2514.42,2514.42,30,2025-09-17,Shipped,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Cookbook,Books,2514.42
+192,1109,11,1,5997.5,5997.5,120,2025-06-30,Delivered,Ananya Bansal,ananya.bansal120@example.com,Pune,2024-06-05,Men's Cotton T-Shirt,Fashion,5997.5
+193,1109,9,1,3514.91,3514.91,120,2025-06-30,Delivered,Ananya Bansal,ananya.bansal120@example.com,Pune,2024-06-05,Webcam HD,Electronics,3514.91
+194,1110,12,1,4082.85,4082.85,142,2024-07-17,Cancelled,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Women's Kurti,Fashion,4082.85
+195,1111,41,3,1417.07,4251.21,24,2025-04-17,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Adjustable Dumbbell Set,Sports,2567.5
+196,1111,2,1,383.19,383.19,24,2025-04-17,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Bluetooth Speaker,Electronics,383.19
+197,1111,43,1,2567.5,2567.5,24,2025-04-17,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Football,Sports,2567.5
+198,1111,19,1,1211.71,1211.71,24,2025-04-17,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Sports Cap,Fashion,1211.71
+199,1112,40,1,5930.5,5930.5,34,2024-06-14,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Yoga Mat,Sports,5930.5
+200,1112,43,1,2567.5,2567.5,34,2024-06-14,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Football,Sports,2567.5
+201,1112,33,1,3368.07,3368.07,34,2024-06-14,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Body Lotion 200ml,Beauty,3368.07
+202,1113,7,1,5777.18,5777.18,129,2024-02-23,Processing,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Mechanical Keyboard,Electronics,5777.18
+203,1114,44,1,1247.36,1247.36,53,2025-12-29,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Resistance Bands Set,Sports,1247.36
+204,1114,27,1,5167.74,5167.74,53,2025-12-29,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Ceramic Dinner Set,Home & Kitchen,5167.74
+205,1114,10,2,5712.1,11424.2,53,2025-12-29,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Portable SSD 1TB,Electronics,5712.1
+206,1114,39,1,3160.39,3160.39,53,2025-12-29,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Business Strategy Book,Books,3160.39
+207,1115,39,1,3160.39,3160.39,39,2024-05-30,Returned,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Business Strategy Book,Books,3160.39
+208,1116,44,1,1247.36,1247.36,140,2024-01-28,Returned,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Resistance Bands Set,Sports,1247.36
+209,1116,42,1,3324.17,3324.17,140,2024-01-28,Returned,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Cricket Bat,Sports,3324.17
+210,1116,28,3,2079.35,6238.049999999999,140,2024-01-28,Returned,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Storage Organizer Box,Home & Kitchen,2079.35
+211,1116,34,2,2810.73,5621.46,140,2024-01-28,Returned,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Shampoo 340ml,Beauty,2810.73
+212,1117,45,1,2266.41,2266.41,42,2025-01-18,Delivered,Rahul Bhat,rahul.bhat42@example.com,Bengaluru,2024-02-21,Skipping Rope,Sports,2266.41
+213,1117,37,2,5825.58,11651.16,42,2025-01-18,Delivered,Rahul Bhat,rahul.bhat42@example.com,Bengaluru,2024-02-21,Children's Story Set,Books,5825.58
+214,1117,7,1,5777.18,5777.18,42,2025-01-18,Delivered,Rahul Bhat,rahul.bhat42@example.com,Bengaluru,2024-02-21,Mechanical Keyboard,Electronics,5777.18
+215,1118,17,1,3961.33,3961.33,128,2024-05-29,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Formal Shirt,Fashion,3961.33
+216,1118,13,1,1726.64,1726.64,128,2024-05-29,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Denim Jacket,Fashion,1726.64
+219,1120,38,1,2514.42,2514.42,41,2024-01-20,Shipped,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Cookbook,Books,2514.42
+220,1121,24,1,2185.57,2185.57,36,2025-06-24,Returned,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Air Fryer,Home & Kitchen,2185.57
+221,1122,14,1,385.36,385.36,25,2024-09-01,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Running Shoes,Fashion,385.36
+224,1124,9,1,3514.91,3514.91,76,2025-08-11,Delivered,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Webcam HD,Electronics,3514.91
+225,1124,43,2,2567.5,5135.0,76,2025-08-11,Delivered,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Football,Sports,2567.5
+226,1125,33,1,3368.07,3368.07,1,2025-09-21,Cancelled,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Body Lotion 200ml,Beauty,3368.07
+227,1126,45,2,2266.41,4532.82,44,2025-06-20,Cancelled,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Skipping Rope,Sports,2266.41
+228,1126,44,3,1247.36,3742.08,44,2025-06-20,Cancelled,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Resistance Bands Set,Sports,1247.36
+229,1127,10,1,5712.1,5712.1,1,2025-07-21,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Portable SSD 1TB,Electronics,5712.1
+230,1128,17,1,3961.33,3961.33,85,2025-01-31,Cancelled,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Formal Shirt,Fashion,3961.33
+231,1129,25,3,2099.85,6299.549999999999,54,2024-09-03,Delivered,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Cotton Bedsheet Set,Home & Kitchen,2099.85
+232,1130,19,1,1211.71,1211.71,40,2024-05-16,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Sports Cap,Fashion,1211.71
+233,1130,39,1,3160.39,3160.39,40,2024-05-16,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Business Strategy Book,Books,3160.39
+234,1131,43,3,2567.5,7702.5,148,2024-06-28,Processing,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Football,Sports,2567.5
+235,1132,39,1,3160.39,3160.39,94,2024-05-18,Delivered,Aarohi Chawla,aarohi.chawla94@example.com,Ahmedabad,2025-07-15,Business Strategy Book,Books,3160.39
+236,1133,44,1,1247.36,1247.36,19,2024-10-27,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Resistance Bands Set,Sports,1247.36
+237,1133,3,3,2677.37,8032.11,19,2024-10-27,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Smartwatch,Electronics,2677.37
+238,1134,26,1,4070.28,4070.28,32,2025-06-11,Returned,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Vacuum Flask,Home & Kitchen,4070.28
+239,1135,34,2,2810.73,5621.46,130,2024-02-07,Delivered,Aarohi Joshi,aarohi.joshi130@example.com,Delhi,2025-07-17,Shampoo 340ml,Beauty,2810.73
+240,1135,1,1,620.58,620.58,130,2024-02-07,Delivered,Aarohi Joshi,aarohi.joshi130@example.com,Delhi,2025-07-17,Wireless Earbuds,Electronics,620.58
+241,1136,38,1,2514.42,2514.42,31,2024-10-06,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Cookbook,Books,2514.42
+242,1136,23,1,683.77,683.77,31,2024-10-06,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,LED Desk Lamp,Home & Kitchen,683.77
+243,1136,18,1,5509.03,5509.03,31,2024-10-06,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Women's Handbag,Fashion,5509.03
+244,1137,36,1,2041.15,2041.15,129,2025-03-26,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Self-Help Book,Books,2041.15
+245,1137,5,1,1614.65,1614.65,129,2025-03-26,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,USB-C Hub,Electronics,1614.65
+246,1138,35,2,1989.93,3979.86,124,2025-01-11,Shipped,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Fiction Bestseller,Books,1989.93
+247,1139,25,1,2099.85,2099.85,41,2025-03-16,Delivered,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Cotton Bedsheet Set,Home & Kitchen,2099.85
+248,1139,37,1,5825.58,5825.58,41,2025-03-16,Delivered,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Children's Story Set,Books,5825.58
+249,1140,38,1,2514.42,2514.42,41,2024-12-01,Shipped,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Cookbook,Books,2514.42
+250,1140,2,1,383.19,383.19,41,2024-12-01,Shipped,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Bluetooth Speaker,Electronics,383.19
+251,1141,45,1,2266.41,2266.41,32,2024-06-19,Processing,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Skipping Rope,Sports,2266.41
+252,1142,34,2,2810.73,5621.46,142,2025-09-21,Returned,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Shampoo 340ml,Beauty,2810.73
+253,1142,35,1,1989.93,1989.93,142,2025-09-21,Returned,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Fiction Bestseller,Books,1989.93
+254,1142,1,2,620.58,1241.16,142,2025-09-21,Returned,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Wireless Earbuds,Electronics,620.58
+255,1142,45,3,2266.41,6799.23,142,2025-09-21,Returned,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Skipping Rope,Sports,2266.41
+256,1143,37,1,5825.58,5825.58,39,2025-11-18,Returned,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Children's Story Set,Books,5825.58
+257,1144,13,2,1726.64,3453.28,82,2024-02-01,Delivered,Anika Patel,anika.patel82@example.com,Delhi,2025-07-15,Denim Jacket,Fashion,1726.64
+258,1144,32,1,1702.62,1702.62,82,2024-02-01,Delivered,Anika Patel,anika.patel82@example.com,Delhi,2025-07-15,Hair Serum,Beauty,3089.4
+259,1145,40,2,5930.5,11861.0,105,2024-02-05,Delivered,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,Yoga Mat,Sports,5930.5
+260,1145,23,1,683.77,683.77,105,2024-02-05,Delivered,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,LED Desk Lamp,Home & Kitchen,683.77
+261,1145,10,1,5712.1,5712.1,105,2024-02-05,Delivered,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,Portable SSD 1TB,Electronics,5712.1
+262,1146,3,1,2677.37,2677.37,101,2025-08-03,Delivered,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Smartwatch,Electronics,2677.37
+264,1146,24,2,2185.57,4371.14,101,2025-08-03,Delivered,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Air Fryer,Home & Kitchen,2185.57
+265,1147,33,2,3368.07,6736.14,18,2025-01-15,Processing,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Body Lotion 200ml,Beauty,3368.07
+266,1147,18,1,5509.03,5509.03,18,2025-01-15,Processing,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Women's Handbag,Fashion,5509.03
+267,1147,26,3,4070.28,12210.84,18,2025-01-15,Processing,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Vacuum Flask,Home & Kitchen,4070.28
+268,1147,15,1,4574.17,4574.17,18,2025-01-15,Processing,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Leather Wallet,Fashion,4574.17
+269,1148,30,1,1836.07,1836.07,53,2025-01-10,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Sunscreen SPF50,Beauty,1836.07
+270,1148,8,1,5040.36,5040.36,53,2025-01-10,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Wireless Mouse,Electronics,5040.36
+271,1148,45,1,2266.41,2266.41,53,2025-01-10,Returned,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Skipping Rope,Sports,2266.41
+272,1149,17,1,3961.33,3961.33,59,2024-01-27,Delivered,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Formal Shirt,Fashion,3961.33
+273,1150,40,1,5930.5,5930.5,30,2024-04-30,Shipped,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Yoga Mat,Sports,5930.5
+274,1151,27,2,5167.74,10335.48,110,2025-09-18,Shipped,Vivaan Joshi,vivaan.joshi110@example.com,Mumbai,2025-10-27,Ceramic Dinner Set,Home & Kitchen,5167.74
+275,1152,18,1,5509.03,5509.03,103,2024-05-05,Delivered,Saanvi Bhat,saanvi.bhat103@example.com,Pune,2025-07-13,Women's Handbag,Fashion,5509.03
+276,1152,29,1,4913.02,4913.02,103,2024-05-05,Delivered,Saanvi Bhat,saanvi.bhat103@example.com,Pune,2025-07-13,Face Wash 100ml,Beauty,3089.4
+277,1152,12,2,4082.85,8165.7,103,2024-05-05,Delivered,Saanvi Bhat,saanvi.bhat103@example.com,Pune,2025-07-13,Women's Kurti,Fashion,4082.85
+278,1153,13,2,1726.64,3453.28,30,2024-03-30,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Denim Jacket,Fashion,1726.64
+279,1153,10,1,5712.1,5712.1,30,2024-03-30,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Portable SSD 1TB,Electronics,5712.1
+280,1153,31,2,5679.38,11358.76,30,2024-03-30,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Lip Balm Pack,Beauty,5679.38
+281,1154,32,1,5172.24,5172.24,41,2025-07-09,Shipped,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Hair Serum,Beauty,3089.4
+282,1154,20,1,3574.18,3574.18,41,2025-07-09,Shipped,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Sneakers,Fashion,3574.18
+283,1155,17,1,3961.33,3961.33,63,2024-06-27,Cancelled,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Formal Shirt,Fashion,3961.33
+285,1157,17,1,3961.33,3961.33,4,2025-08-09,Cancelled,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Formal Shirt,Fashion,3961.33
+286,1157,23,2,683.77,1367.54,4,2025-08-09,Cancelled,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,LED Desk Lamp,Home & Kitchen,683.77
+287,1158,37,1,5825.58,5825.58,67,2025-09-18,Delivered,Anika Nair,anika.nair67@example.com,Mumbai,2024-06-15,Children's Story Set,Books,5825.58
+288,1159,19,1,1211.71,1211.71,25,2025-06-22,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Sports Cap,Fashion,1211.71
+289,1159,23,1,683.77,683.77,25,2025-06-22,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,LED Desk Lamp,Home & Kitchen,683.77
+290,1159,21,1,3863.49,3863.49,25,2025-06-22,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Non-Stick Pan Set,Home & Kitchen,3863.49
+291,1159,44,3,1247.36,3742.08,25,2025-06-22,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Resistance Bands Set,Sports,1247.36
+292,1160,22,1,3026.6,3026.6,38,2024-05-08,Cancelled,Sai Chawla,sai.chawla38@example.com,Delhi,2025-03-09,Electric Kettle,Home & Kitchen,3026.6
+293,1160,27,2,5167.74,10335.48,38,2024-05-08,Cancelled,Sai Chawla,sai.chawla38@example.com,Delhi,2025-03-09,Ceramic Dinner Set,Home & Kitchen,5167.74
+294,1161,15,1,4574.17,4574.17,129,2024-12-18,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Leather Wallet,Fashion,4574.17
+295,1162,39,1,3160.39,3160.39,20,2025-08-24,Delivered,Varun Reddy,varun.reddy20@example.com,Bengaluru,2025-10-04,Business Strategy Book,Books,3160.39
+296,1162,42,2,3324.17,6648.34,20,2025-08-24,Delivered,Varun Reddy,varun.reddy20@example.com,Bengaluru,2025-10-04,Cricket Bat,Sports,3324.17
+297,1163,34,1,2810.73,2810.73,65,2024-02-26,Delivered,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Shampoo 340ml,Beauty,2810.73
+298,1163,29,1,4407.47,4407.47,65,2024-02-26,Delivered,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Face Wash 100ml,Beauty,3089.4
+299,1164,45,1,2266.41,2266.41,83,2024-11-26,Delivered,Arjun Chawla,arjun.chawla83@example.com,Kolkata,2025-08-16,Skipping Rope,Sports,2266.41
+300,1164,6,3,684.26,2052.7799999999997,83,2024-11-26,Delivered,Arjun Chawla,arjun.chawla83@example.com,Kolkata,2025-08-16,Power Bank 10000mAh,Electronics,684.26
+301,1164,14,1,385.36,385.36,83,2024-11-26,Delivered,Arjun Chawla,arjun.chawla83@example.com,Kolkata,2025-08-16,Running Shoes,Fashion,385.36
+302,1164,11,1,5997.5,5997.5,83,2024-11-26,Delivered,Arjun Chawla,arjun.chawla83@example.com,Kolkata,2025-08-16,Men's Cotton T-Shirt,Fashion,5997.5
+303,1165,40,1,5930.5,5930.5,146,2024-03-21,Shipped,Saanvi Bansal,saanvi.bansal146@example.com,Unknown,2025-08-31,Yoga Mat,Sports,5930.5
+304,1166,20,2,3574.18,7148.36,37,2024-11-06,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Sneakers,Fashion,3574.18
+305,1166,15,1,4574.17,4574.17,37,2024-11-06,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Leather Wallet,Fashion,4574.17
+306,1166,16,1,2902.43,2902.43,37,2024-11-06,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Sunglasses,Fashion,2902.43
+307,1167,21,2,3863.49,7726.98,107,2024-06-06,Delivered,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Non-Stick Pan Set,Home & Kitchen,3863.49
+311,1169,41,1,1961.52,1961.52,24,2025-10-18,Shipped,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Adjustable Dumbbell Set,Sports,2567.5
+312,1170,6,1,684.26,684.26,141,2025-09-24,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Power Bank 10000mAh,Electronics,684.26
+313,1170,29,1,211.75,211.75,141,2025-09-24,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Face Wash 100ml,Beauty,3089.4
+314,1171,9,1,3514.91,3514.91,149,2025-10-19,Shipped,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,Webcam HD,Electronics,3514.91
+315,1171,23,3,683.77,2051.31,149,2025-10-19,Shipped,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,LED Desk Lamp,Home & Kitchen,683.77
+316,1171,19,1,1211.71,1211.71,149,2025-10-19,Shipped,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,Sports Cap,Fashion,1211.71
+317,1172,19,1,1211.71,1211.71,20,2024-10-31,Processing,Varun Reddy,varun.reddy20@example.com,Bengaluru,2025-10-04,Sports Cap,Fashion,1211.71
+318,1173,13,2,1726.64,3453.28,127,2025-04-20,Delivered,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Denim Jacket,Fashion,1726.64
+319,1173,27,1,5167.74,5167.74,127,2025-04-20,Delivered,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Ceramic Dinner Set,Home & Kitchen,5167.74
+320,1174,25,1,2099.85,2099.85,4,2024-12-19,Returned,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Cotton Bedsheet Set,Home & Kitchen,2099.85
+321,1174,15,1,4574.17,4574.17,4,2024-12-19,Returned,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Leather Wallet,Fashion,4574.17
+322,1175,45,1,2266.41,2266.41,4,2024-09-04,Processing,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Skipping Rope,Sports,2266.41
+323,1175,44,1,1247.36,1247.36,4,2024-09-04,Processing,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Resistance Bands Set,Sports,1247.36
+324,1175,18,1,5509.03,5509.03,4,2024-09-04,Processing,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Women's Handbag,Fashion,5509.03
+325,1175,19,1,1211.71,1211.71,4,2024-09-04,Processing,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Sports Cap,Fashion,1211.71
+326,1176,45,1,2266.41,2266.41,26,2024-10-24,Returned,Anika Singh,anika.singh26@example.com,Bengaluru,2025-01-17,Skipping Rope,Sports,2266.41
+327,1176,40,1,5930.5,5930.5,26,2024-10-24,Returned,Anika Singh,anika.singh26@example.com,Bengaluru,2025-01-17,Yoga Mat,Sports,5930.5
+328,1177,7,1,5777.18,5777.18,82,2024-12-01,Cancelled,Anika Patel,anika.patel82@example.com,Delhi,2025-07-15,Mechanical Keyboard,Electronics,5777.18
+329,1178,1,1,620.58,620.58,61,2025-05-25,Shipped,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Wireless Earbuds,Electronics,620.58
+330,1179,22,1,3026.6,3026.6,93,2025-06-01,Processing,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Electric Kettle,Home & Kitchen,3026.6
+332,1180,22,1,3026.6,3026.6,142,2024-02-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Electric Kettle,Home & Kitchen,3026.6
+333,1180,6,1,684.26,684.26,142,2024-02-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Power Bank 10000mAh,Electronics,684.26
+334,1180,10,1,5712.1,5712.1,142,2024-02-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Portable SSD 1TB,Electronics,5712.1
+335,1181,1,1,620.58,620.58,142,2024-10-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Wireless Earbuds,Electronics,620.58
+336,1181,8,1,5040.36,5040.36,142,2024-10-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Wireless Mouse,Electronics,5040.36
+337,1181,16,1,2902.43,2902.43,142,2024-10-19,Delivered,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Sunglasses,Fashion,2902.43
+339,1183,20,1,3574.18,3574.18,128,2025-07-29,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Sneakers,Fashion,3574.18
+340,1183,21,2,3863.49,7726.98,128,2025-07-29,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Non-Stick Pan Set,Home & Kitchen,3863.49
+341,1184,31,1,5679.38,5679.38,65,2025-05-31,Processing,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Lip Balm Pack,Beauty,5679.38
+342,1185,43,1,2567.5,2567.5,1,2025-11-27,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Football,Sports,2567.5
+343,1185,14,1,385.36,385.36,1,2025-11-27,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Running Shoes,Fashion,385.36
+344,1185,8,1,5040.36,5040.36,1,2025-11-27,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Wireless Mouse,Electronics,5040.36
+345,1186,3,1,2677.37,2677.37,66,2025-07-25,Cancelled,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Smartwatch,Electronics,2677.37
+346,1187,10,2,5712.1,11424.2,37,2025-02-15,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Portable SSD 1TB,Electronics,5712.1
+347,1187,24,1,2185.57,2185.57,37,2025-02-15,Delivered,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Air Fryer,Home & Kitchen,2185.57
+348,1188,41,1,2229.78,2229.78,71,2025-06-15,Processing,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Adjustable Dumbbell Set,Sports,2567.5
+349,1189,7,1,5777.18,5777.18,102,2024-11-22,Delivered,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Mechanical Keyboard,Electronics,5777.18
+350,1189,9,1,3514.91,3514.91,102,2024-11-22,Delivered,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Webcam HD,Electronics,3514.91
+351,1190,29,2,274.91,549.82,141,2025-08-30,Cancelled,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Face Wash 100ml,Beauty,3089.4
+354,1192,12,1,4082.85,4082.85,31,2025-11-20,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Women's Kurti,Fashion,4082.85
+355,1193,39,1,3160.39,3160.39,39,2024-01-28,Processing,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Business Strategy Book,Books,3160.39
+356,1193,36,1,2041.15,2041.15,39,2024-01-28,Processing,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Self-Help Book,Books,2041.15
+357,1194,30,2,1836.07,3672.14,54,2025-08-14,Delivered,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Sunscreen SPF50,Beauty,1836.07
+358,1194,1,2,620.58,1241.16,54,2025-08-14,Delivered,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Wireless Earbuds,Electronics,620.58
+361,1196,34,1,2810.73,2810.73,57,2024-07-14,Delivered,Riya Patel,riya.patel57@example.com,Pune,2024-04-16,Shampoo 340ml,Beauty,2810.73
+362,1197,19,1,1211.71,1211.71,53,2025-12-08,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Sports Cap,Fashion,1211.71
+363,1198,34,1,2810.73,2810.73,59,2024-03-04,Delivered,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Shampoo 340ml,Beauty,2810.73
+364,1199,12,1,4082.85,4082.85,50,2025-06-22,Returned,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Women's Kurti,Fashion,4082.85
+365,1199,3,1,2677.37,2677.37,50,2025-06-22,Returned,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Smartwatch,Electronics,2677.37
+366,1199,13,1,1726.64,1726.64,50,2025-06-22,Returned,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Denim Jacket,Fashion,1726.64
+367,1199,7,2,5777.18,11554.36,50,2025-06-22,Returned,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Mechanical Keyboard,Electronics,5777.18
+368,1200,39,2,3160.39,6320.78,69,2024-12-16,Cancelled,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Business Strategy Book,Books,3160.39
+369,1201,42,2,3324.17,6648.34,148,2025-12-10,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Cricket Bat,Sports,3324.17
+370,1201,32,1,5638.73,5638.73,148,2025-12-10,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Hair Serum,Beauty,3089.4
+371,1201,6,1,684.26,684.26,148,2025-12-10,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Power Bank 10000mAh,Electronics,684.26
+372,1201,30,2,1836.07,3672.14,148,2025-12-10,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Sunscreen SPF50,Beauty,1836.07
+373,1202,5,2,1614.65,3229.3,127,2024-10-12,Shipped,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,USB-C Hub,Electronics,1614.65
+374,1203,34,1,2810.73,2810.73,148,2025-12-22,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Shampoo 340ml,Beauty,2810.73
+375,1204,13,1,1726.64,1726.64,25,2024-12-23,Shipped,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Denim Jacket,Fashion,1726.64
+376,1204,34,3,2810.73,8432.19,25,2024-12-23,Shipped,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Shampoo 340ml,Beauty,2810.73
+377,1205,7,1,5777.18,5777.18,39,2024-12-19,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Mechanical Keyboard,Electronics,5777.18
+378,1205,41,2,2648.39,5296.78,39,2024-12-19,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Adjustable Dumbbell Set,Sports,2567.5
+379,1206,36,1,2041.15,2041.15,107,2025-03-28,Shipped,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Self-Help Book,Books,2041.15
+381,1206,33,1,3368.07,3368.07,107,2025-03-28,Shipped,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Body Lotion 200ml,Beauty,3368.07
+382,1207,21,1,3863.49,3863.49,74,2024-10-04,Shipped,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Non-Stick Pan Set,Home & Kitchen,3863.49
+383,1207,24,1,2185.57,2185.57,74,2024-10-04,Shipped,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Air Fryer,Home & Kitchen,2185.57
+384,1207,27,1,5167.74,5167.74,74,2024-10-04,Shipped,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Ceramic Dinner Set,Home & Kitchen,5167.74
+385,1207,41,3,1636.42,4909.26,74,2024-10-04,Shipped,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Adjustable Dumbbell Set,Sports,2567.5
+386,1208,26,1,4070.28,4070.28,125,2024-02-21,Delivered,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Vacuum Flask,Home & Kitchen,4070.28
+389,1211,45,2,2266.41,4532.82,19,2025-05-03,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Skipping Rope,Sports,2266.41
+390,1212,37,1,5825.58,5825.58,147,2025-10-23,Delivered,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Children's Story Set,Books,5825.58
+391,1212,10,1,5712.1,5712.1,147,2025-10-23,Delivered,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Portable SSD 1TB,Electronics,5712.1
+392,1213,16,2,2902.43,5804.86,66,2024-08-25,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Sunglasses,Fashion,2902.43
+393,1213,15,1,4574.17,4574.17,66,2024-08-25,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Leather Wallet,Fashion,4574.17
+394,1213,17,2,3961.33,7922.66,66,2024-08-25,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Formal Shirt,Fashion,3961.33
+395,1214,12,2,4082.85,8165.7,91,2024-02-07,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Women's Kurti,Fashion,4082.85
+396,1214,32,1,3907.19,3907.19,91,2024-02-07,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Hair Serum,Beauty,3089.4
+397,1214,45,2,2266.41,4532.82,91,2024-02-07,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Skipping Rope,Sports,2266.41
+398,1215,22,1,3026.6,3026.6,149,2024-02-08,Delivered,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,Electric Kettle,Home & Kitchen,3026.6
+399,1215,23,2,683.77,1367.54,149,2024-02-08,Delivered,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,LED Desk Lamp,Home & Kitchen,683.77
+400,1215,28,1,2079.35,2079.35,149,2024-02-08,Delivered,Ayaan Nair,ayaan.nair149@example.com,Bengaluru,2024-03-02,Storage Organizer Box,Home & Kitchen,2079.35
+401,1216,41,1,1932.98,1932.98,128,2024-10-18,Processing,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Adjustable Dumbbell Set,Sports,2567.5
+402,1217,10,1,5712.1,5712.1,99,2024-05-17,Processing,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Portable SSD 1TB,Electronics,5712.1
+403,1217,21,1,3863.49,3863.49,99,2024-05-17,Processing,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Non-Stick Pan Set,Home & Kitchen,3863.49
+405,1219,26,1,4070.28,4070.28,75,2024-10-29,Delivered,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Vacuum Flask,Home & Kitchen,4070.28
+406,1220,4,1,2035.58,2035.58,32,2025-06-11,Cancelled,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Laptop Stand,Electronics,2035.58
+407,1220,36,1,2041.15,2041.15,32,2025-06-11,Cancelled,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Self-Help Book,Books,2041.15
+409,1222,37,1,5825.58,5825.58,101,2024-08-29,Processing,Meera Sharma,meera.sharma101@example.com,Unknown,2025-08-12,Children's Story Set,Books,5825.58
+410,1223,16,1,2902.43,2902.43,34,2025-08-19,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Sunglasses,Fashion,2902.43
+411,1223,5,1,1614.65,1614.65,34,2025-08-19,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,USB-C Hub,Electronics,1614.65
+412,1224,27,1,5167.74,5167.74,61,2025-04-21,Shipped,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Ceramic Dinner Set,Home & Kitchen,5167.74
+413,1225,39,1,3160.39,3160.39,8,2025-12-07,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Business Strategy Book,Books,3160.39
+414,1226,23,1,683.77,683.77,96,2025-09-21,Delivered,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,LED Desk Lamp,Home & Kitchen,683.77
+415,1227,10,1,5712.1,5712.1,9,2025-01-17,Returned,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Portable SSD 1TB,Electronics,5712.1
+416,1228,44,1,1247.36,1247.36,74,2025-11-11,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Resistance Bands Set,Sports,1247.36
+417,1229,8,3,5040.36,15121.079999999998,25,2024-03-24,Processing,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Wireless Mouse,Electronics,5040.36
+418,1229,4,2,2035.58,4071.16,25,2024-03-24,Processing,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Laptop Stand,Electronics,2035.58
+419,1229,16,1,2902.43,2902.43,25,2024-03-24,Processing,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Sunglasses,Fashion,2902.43
+420,1230,29,1,2091.48,2091.48,119,2024-04-24,Delivered,Aarohi Menon,aarohi.menon119@example.com,Bengaluru,2025-03-06,Face Wash 100ml,Beauty,3089.4
+421,1231,35,1,1989.93,1989.93,104,2025-08-09,Delivered,Myra Kapoor,myra.kapoor104@example.com,Mumbai,2025-03-22,Fiction Bestseller,Books,1989.93
+422,1232,10,1,5712.1,5712.1,106,2025-08-20,Processing,Anika Bhat,anika.bhat106@example.com,Bengaluru,2025-02-07,Portable SSD 1TB,Electronics,5712.1
+423,1232,45,1,2266.41,2266.41,106,2025-08-20,Processing,Anika Bhat,anika.bhat106@example.com,Bengaluru,2025-02-07,Skipping Rope,Sports,2266.41
+424,1233,11,1,5997.5,5997.5,75,2024-05-15,Returned,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Men's Cotton T-Shirt,Fashion,5997.5
+425,1234,18,1,5509.03,5509.03,54,2025-11-19,Shipped,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Women's Handbag,Fashion,5509.03
+426,1234,4,1,2035.58,2035.58,54,2025-11-19,Shipped,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Laptop Stand,Electronics,2035.58
+427,1235,43,2,2567.5,5135.0,2,2024-08-11,Delivered,Sai Bhat,sai.bhat2@example.com,Unknown,2025-08-27,Football,Sports,2567.5
+428,1235,24,2,2185.57,4371.14,2,2024-08-11,Delivered,Sai Bhat,sai.bhat2@example.com,Unknown,2025-08-27,Air Fryer,Home & Kitchen,2185.57
+429,1236,25,1,2099.85,2099.85,31,2024-03-11,Processing,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Cotton Bedsheet Set,Home & Kitchen,2099.85
+430,1237,32,1,3078.81,3078.81,134,2025-10-23,Returned,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Hair Serum,Beauty,3089.4
+431,1237,39,3,3160.39,9481.17,134,2025-10-23,Returned,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Business Strategy Book,Books,3160.39
+432,1237,35,1,1989.93,1989.93,134,2025-10-23,Returned,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Fiction Bestseller,Books,1989.93
+433,1237,6,1,684.26,684.26,134,2025-10-23,Returned,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Power Bank 10000mAh,Electronics,684.26
+434,1238,23,1,683.77,683.77,31,2025-01-21,Returned,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,LED Desk Lamp,Home & Kitchen,683.77
+435,1239,33,1,3368.07,3368.07,69,2025-10-31,Cancelled,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Body Lotion 200ml,Beauty,3368.07
+436,1240,25,2,2099.85,4199.7,66,2024-08-16,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Cotton Bedsheet Set,Home & Kitchen,2099.85
+437,1241,36,3,2041.15,6123.450000000001,107,2025-11-20,Returned,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Self-Help Book,Books,2041.15
+438,1242,26,1,4070.28,4070.28,127,2025-04-16,Cancelled,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Vacuum Flask,Home & Kitchen,4070.28
+439,1243,44,1,1247.36,1247.36,58,2024-02-02,Returned,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Resistance Bands Set,Sports,1247.36
+440,1244,16,1,2902.43,2902.43,9,2024-09-03,Delivered,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Sunglasses,Fashion,2902.43
+441,1245,39,1,3160.39,3160.39,25,2024-09-07,Delivered,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Business Strategy Book,Books,3160.39
+442,1246,9,1,3514.91,3514.91,112,2024-02-27,Delivered,Kabir Nair,kabir.nair112@example.com,Chennai,2025-11-16,Webcam HD,Electronics,3514.91
+443,1247,9,1,3514.91,3514.91,91,2024-11-22,Cancelled,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Webcam HD,Electronics,3514.91
+445,1248,28,1,2079.35,2079.35,63,2024-08-14,Returned,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Storage Organizer Box,Home & Kitchen,2079.35
+446,1249,21,3,3863.49,11590.47,71,2024-06-28,Returned,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Non-Stick Pan Set,Home & Kitchen,3863.49
+447,1249,5,1,1614.65,1614.65,71,2024-06-28,Returned,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,USB-C Hub,Electronics,1614.65
+448,1249,36,2,2041.15,4082.3,71,2024-06-28,Returned,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Self-Help Book,Books,2041.15
+449,1249,35,2,1989.93,3979.86,71,2024-06-28,Returned,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Fiction Bestseller,Books,1989.93
+450,1250,29,2,4956.94,9913.88,54,2025-10-20,Returned,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Face Wash 100ml,Beauty,3089.4
+451,1251,10,1,5712.1,5712.1,141,2025-02-22,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Portable SSD 1TB,Electronics,5712.1
+452,1251,13,2,1726.64,3453.28,141,2025-02-22,Delivered,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Denim Jacket,Fashion,1726.64
+453,1252,37,1,5825.58,5825.58,124,2024-08-18,Shipped,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Children's Story Set,Books,5825.58
+454,1253,2,1,383.19,383.19,107,2024-02-29,Returned,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Bluetooth Speaker,Electronics,383.19
+455,1254,33,1,3368.07,3368.07,69,2025-02-01,Delivered,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Body Lotion 200ml,Beauty,3368.07
+456,1254,39,1,3160.39,3160.39,69,2025-02-01,Delivered,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Business Strategy Book,Books,3160.39
+457,1255,11,1,5997.5,5997.5,40,2025-01-14,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Men's Cotton T-Shirt,Fashion,5997.5
+458,1255,13,3,1726.64,5179.92,40,2025-01-14,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Denim Jacket,Fashion,1726.64
+459,1256,15,1,4574.17,4574.17,27,2024-10-01,Returned,Pooja Pillai,pooja.pillai27@example.com,Unknown,2025-09-05,Leather Wallet,Fashion,4574.17
+461,1256,13,1,1726.64,1726.64,27,2024-10-01,Returned,Pooja Pillai,pooja.pillai27@example.com,Unknown,2025-09-05,Denim Jacket,Fashion,1726.64
+462,1256,14,1,385.36,385.36,27,2024-10-01,Returned,Pooja Pillai,pooja.pillai27@example.com,Unknown,2025-09-05,Running Shoes,Fashion,385.36
+463,1257,3,1,2677.37,2677.37,38,2024-07-11,Delivered,Sai Chawla,sai.chawla38@example.com,Delhi,2025-03-09,Smartwatch,Electronics,2677.37
+464,1258,26,3,4070.28,12210.84,40,2024-11-06,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Vacuum Flask,Home & Kitchen,4070.28
+465,1258,40,1,5930.5,5930.5,40,2024-11-06,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Yoga Mat,Sports,5930.5
+466,1259,3,1,2677.37,2677.37,25,2024-09-05,Delivered,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Smartwatch,Electronics,2677.37
+467,1259,34,2,2810.73,5621.46,25,2024-09-05,Delivered,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Shampoo 340ml,Beauty,2810.73
+468,1260,35,1,1989.93,1989.93,105,2024-10-16,Returned,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,Fiction Bestseller,Books,1989.93
+469,1261,34,3,2810.73,8432.19,125,2024-09-24,Cancelled,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Shampoo 340ml,Beauty,2810.73
+470,1261,41,1,5323.73,5323.73,125,2024-09-24,Cancelled,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Adjustable Dumbbell Set,Sports,2567.5
+471,1262,11,1,5997.5,5997.5,51,2025-04-25,Cancelled,Karthik Pillai,karthik.pillai51@example.com,Delhi,2024-09-24,Men's Cotton T-Shirt,Fashion,5997.5
+473,1264,6,1,684.26,684.26,4,2025-08-21,Returned,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Power Bank 10000mAh,Electronics,684.26
+474,1264,33,3,3368.07,10104.210000000001,4,2025-08-21,Returned,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Body Lotion 200ml,Beauty,3368.07
+475,1265,27,1,5167.74,5167.74,128,2024-09-08,Processing,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Ceramic Dinner Set,Home & Kitchen,5167.74
+476,1266,13,1,1726.64,1726.64,75,2024-09-20,Processing,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Denim Jacket,Fashion,1726.64
+477,1266,30,1,1836.07,1836.07,75,2024-09-20,Processing,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Sunscreen SPF50,Beauty,1836.07
+478,1267,8,1,5040.36,5040.36,36,2025-04-16,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Wireless Mouse,Electronics,5040.36
+479,1268,6,2,684.26,1368.52,72,2025-07-13,Processing,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Power Bank 10000mAh,Electronics,684.26
+480,1268,34,3,2810.73,8432.19,72,2025-07-13,Processing,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Shampoo 340ml,Beauty,2810.73
+481,1269,36,1,2041.15,2041.15,31,2025-06-20,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Self-Help Book,Books,2041.15
+482,1270,37,2,5825.58,11651.16,25,2024-01-07,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Children's Story Set,Books,5825.58
+483,1270,43,2,2567.5,5135.0,25,2024-01-07,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Football,Sports,2567.5
+484,1270,10,1,5712.1,5712.1,25,2024-01-07,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Portable SSD 1TB,Electronics,5712.1
+485,1270,11,1,5997.5,5997.5,25,2024-01-07,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Men's Cotton T-Shirt,Fashion,5997.5
+486,1271,9,3,3514.91,10544.73,78,2024-01-10,Delivered,Neha Singh,neha.singh78@example.com,Delhi,2025-03-17,Webcam HD,Electronics,3514.91
+490,1273,6,1,684.26,684.26,69,2025-07-18,Returned,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Power Bank 10000mAh,Electronics,684.26
+491,1274,18,1,5509.03,5509.03,147,2024-01-18,Returned,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Women's Handbag,Fashion,5509.03
+492,1274,40,1,5930.5,5930.5,147,2024-01-18,Returned,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Yoga Mat,Sports,5930.5
+493,1274,41,1,364.82,364.82,147,2024-01-18,Returned,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Adjustable Dumbbell Set,Sports,2567.5
+494,1275,39,1,3160.39,3160.39,55,2024-04-08,Delivered,Ananya Iyer,ananya.iyer55@example.com,Mumbai,2025-01-13,Business Strategy Book,Books,3160.39
+495,1275,20,1,3574.18,3574.18,55,2024-04-08,Delivered,Ananya Iyer,ananya.iyer55@example.com,Mumbai,2025-01-13,Sneakers,Fashion,3574.18
+496,1276,19,1,1211.71,1211.71,59,2024-09-30,Returned,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Sports Cap,Fashion,1211.71
+497,1277,36,3,2041.15,6123.450000000001,125,2025-12-14,Delivered,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Self-Help Book,Books,2041.15
+498,1277,12,1,4082.85,4082.85,125,2025-12-14,Delivered,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Women's Kurti,Fashion,4082.85
+499,1278,21,2,3863.49,7726.98,17,2024-04-05,Returned,Rohan Bansal,rohan.bansal17@example.com,Bengaluru,2024-09-28,Non-Stick Pan Set,Home & Kitchen,3863.49
+500,1278,24,2,2185.57,4371.14,17,2024-04-05,Returned,Rohan Bansal,rohan.bansal17@example.com,Bengaluru,2024-09-28,Air Fryer,Home & Kitchen,2185.57
+501,1278,25,1,2099.85,2099.85,17,2024-04-05,Returned,Rohan Bansal,rohan.bansal17@example.com,Bengaluru,2024-09-28,Cotton Bedsheet Set,Home & Kitchen,2099.85
+502,1279,22,1,3026.6,3026.6,29,2025-10-14,Delivered,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Electric Kettle,Home & Kitchen,3026.6
+503,1279,34,1,2810.73,2810.73,29,2025-10-14,Delivered,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Shampoo 340ml,Beauty,2810.73
+504,1279,27,2,5167.74,10335.48,29,2025-10-14,Delivered,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Ceramic Dinner Set,Home & Kitchen,5167.74
+505,1280,31,1,5679.38,5679.38,80,2025-10-22,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Lip Balm Pack,Beauty,5679.38
+506,1280,45,1,2266.41,2266.41,80,2025-10-22,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Skipping Rope,Sports,2266.41
+507,1280,39,1,3160.39,3160.39,80,2025-10-22,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Business Strategy Book,Books,3160.39
+508,1280,19,1,1211.71,1211.71,80,2025-10-22,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Sports Cap,Fashion,1211.71
+509,1281,32,2,1511.42,3022.84,49,2025-06-24,Delivered,Ishaan Iyer,ishaan.iyer49@example.com,Hyderabad,2024-03-10,Hair Serum,Beauty,3089.4
+510,1281,12,1,4082.85,4082.85,49,2025-06-24,Delivered,Ishaan Iyer,ishaan.iyer49@example.com,Hyderabad,2024-03-10,Women's Kurti,Fashion,4082.85
+511,1282,8,2,5040.36,10080.72,40,2025-05-01,Shipped,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Wireless Mouse,Electronics,5040.36
+512,1282,14,1,385.36,385.36,40,2025-05-01,Shipped,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Running Shoes,Fashion,385.36
+515,1284,21,1,3863.49,3863.49,107,2025-08-24,Delivered,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Non-Stick Pan Set,Home & Kitchen,3863.49
+516,1284,1,1,620.58,620.58,107,2025-08-24,Delivered,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Wireless Earbuds,Electronics,620.58
+517,1285,12,1,4082.85,4082.85,76,2024-03-19,Shipped,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Women's Kurti,Fashion,4082.85
+518,1285,13,1,1726.64,1726.64,76,2024-03-19,Shipped,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Denim Jacket,Fashion,1726.64
+519,1285,22,1,3026.6,3026.6,76,2024-03-19,Shipped,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Electric Kettle,Home & Kitchen,3026.6
+520,1285,44,2,1247.36,2494.72,76,2024-03-19,Shipped,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Resistance Bands Set,Sports,1247.36
+521,1286,27,2,5167.74,10335.48,1,2025-11-24,Cancelled,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Ceramic Dinner Set,Home & Kitchen,5167.74
+522,1286,4,2,2035.58,4071.16,1,2025-11-24,Cancelled,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Laptop Stand,Electronics,2035.58
+523,1287,14,1,385.36,385.36,41,2025-05-27,Cancelled,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Running Shoes,Fashion,385.36
+524,1287,37,2,5825.58,11651.16,41,2025-05-27,Cancelled,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Children's Story Set,Books,5825.58
+525,1288,18,1,5509.03,5509.03,91,2025-09-11,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Women's Handbag,Fashion,5509.03
+526,1288,2,1,383.19,383.19,91,2025-09-11,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Bluetooth Speaker,Electronics,383.19
+527,1288,22,1,3026.6,3026.6,91,2025-09-11,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Electric Kettle,Home & Kitchen,3026.6
+528,1288,25,2,2099.85,4199.7,91,2025-09-11,Returned,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Cotton Bedsheet Set,Home & Kitchen,2099.85
+529,1289,3,1,2677.37,2677.37,129,2024-10-06,Processing,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Smartwatch,Electronics,2677.37
+530,1290,24,1,2185.57,2185.57,99,2025-03-18,Delivered,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Air Fryer,Home & Kitchen,2185.57
+531,1290,29,1,4741.92,4741.92,99,2025-03-18,Delivered,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Face Wash 100ml,Beauty,3089.4
+532,1290,20,3,3574.18,10722.539999999999,99,2025-03-18,Delivered,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Sneakers,Fashion,3574.18
+533,1291,31,3,5679.38,17038.14,44,2025-09-25,Shipped,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Lip Balm Pack,Beauty,5679.38
+534,1292,31,2,5679.38,11358.76,43,2024-10-01,Delivered,Aarav Iyer,aarav.iyer43@example.com,Kolkata,2024-08-30,Lip Balm Pack,Beauty,5679.38
+535,1293,10,1,5712.1,5712.1,79,2025-02-02,Cancelled,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Portable SSD 1TB,Electronics,5712.1
+536,1293,7,2,5777.18,11554.36,79,2025-02-02,Cancelled,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Mechanical Keyboard,Electronics,5777.18
+537,1293,34,2,2810.73,5621.46,79,2025-02-02,Cancelled,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Shampoo 340ml,Beauty,2810.73
+538,1294,3,1,2677.37,2677.37,125,2025-03-31,Cancelled,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Smartwatch,Electronics,2677.37
+539,1295,30,2,1836.07,3672.14,45,2024-07-10,Returned,Ayaan Bansal,ayaan.bansal45@example.com,Mumbai,2025-03-09,Sunscreen SPF50,Beauty,1836.07
+540,1296,20,2,3574.18,7148.36,134,2024-04-15,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Sneakers,Fashion,3574.18
+541,1296,2,1,383.19,383.19,134,2024-04-15,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Bluetooth Speaker,Electronics,383.19
+542,1296,37,1,5825.58,5825.58,134,2024-04-15,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Children's Story Set,Books,5825.58
+543,1297,43,1,2567.5,2567.5,58,2025-01-29,Delivered,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Football,Sports,2567.5
+544,1297,8,1,5040.36,5040.36,58,2025-01-29,Delivered,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Wireless Mouse,Electronics,5040.36
+545,1297,18,1,5509.03,5509.03,58,2025-01-29,Delivered,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Women's Handbag,Fashion,5509.03
+546,1298,21,1,3863.49,3863.49,58,2024-09-05,Delivered,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Non-Stick Pan Set,Home & Kitchen,3863.49
+547,1299,37,1,5825.58,5825.58,138,2024-11-04,Shipped,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Children's Story Set,Books,5825.58
+548,1299,16,1,2902.43,2902.43,138,2024-11-04,Shipped,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Sunglasses,Fashion,2902.43
+549,1299,11,1,5997.5,5997.5,138,2024-11-04,Shipped,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Men's Cotton T-Shirt,Fashion,5997.5
+550,1300,7,1,5777.18,5777.18,80,2024-10-09,Returned,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Mechanical Keyboard,Electronics,5777.18
+551,1300,25,1,2099.85,2099.85,80,2024-10-09,Returned,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Cotton Bedsheet Set,Home & Kitchen,2099.85
+552,1301,45,1,2266.41,2266.41,127,2025-10-02,Processing,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Skipping Rope,Sports,2266.41
+553,1301,29,2,4320.46,8640.92,127,2025-10-02,Processing,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Face Wash 100ml,Beauty,3089.4
+554,1302,30,1,1836.07,1836.07,55,2024-05-18,Shipped,Ananya Iyer,ananya.iyer55@example.com,Mumbai,2025-01-13,Sunscreen SPF50,Beauty,1836.07
+555,1302,37,3,5825.58,17476.739999999998,55,2024-05-18,Shipped,Ananya Iyer,ananya.iyer55@example.com,Mumbai,2025-01-13,Children's Story Set,Books,5825.58
+556,1303,44,2,1247.36,2494.72,124,2024-12-03,Processing,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Resistance Bands Set,Sports,1247.36
+557,1303,42,1,3324.17,3324.17,124,2024-12-03,Processing,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Cricket Bat,Sports,3324.17
+558,1304,40,1,5930.5,5930.5,50,2024-05-19,Shipped,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Yoga Mat,Sports,5930.5
+559,1304,17,1,3961.33,3961.33,50,2024-05-19,Shipped,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Formal Shirt,Fashion,3961.33
+560,1304,24,2,2185.57,4371.14,50,2024-05-19,Shipped,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Air Fryer,Home & Kitchen,2185.57
+561,1305,31,1,5679.38,5679.38,103,2025-05-05,Cancelled,Saanvi Bhat,saanvi.bhat103@example.com,Pune,2025-07-13,Lip Balm Pack,Beauty,5679.38
+562,1306,19,1,1211.71,1211.71,129,2025-05-17,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Sports Cap,Fashion,1211.71
+563,1306,23,1,683.77,683.77,129,2025-05-17,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,LED Desk Lamp,Home & Kitchen,683.77
+564,1306,39,1,3160.39,3160.39,129,2025-05-17,Delivered,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Business Strategy Book,Books,3160.39
+565,1307,20,1,3574.18,3574.18,93,2025-01-08,Delivered,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Sneakers,Fashion,3574.18
+566,1308,40,1,5930.5,5930.5,8,2024-07-03,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Yoga Mat,Sports,5930.5
+567,1309,5,1,1614.65,1614.65,108,2025-03-24,Shipped,Diya Singh,diya.singh108@example.com,Chennai,2024-11-30,USB-C Hub,Electronics,1614.65
+568,1309,22,1,3026.6,3026.6,108,2025-03-24,Shipped,Diya Singh,diya.singh108@example.com,Chennai,2024-11-30,Electric Kettle,Home & Kitchen,3026.6
+569,1310,22,1,3026.6,3026.6,148,2025-11-20,Processing,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Electric Kettle,Home & Kitchen,3026.6
+570,1310,35,1,1989.93,1989.93,148,2025-11-20,Processing,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Fiction Bestseller,Books,1989.93
+571,1311,32,1,2858.01,2858.01,79,2025-03-09,Returned,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Hair Serum,Beauty,3089.4
+572,1311,8,2,5040.36,10080.72,79,2025-03-09,Returned,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Wireless Mouse,Electronics,5040.36
+573,1312,5,2,1614.65,3229.3,85,2025-07-01,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,USB-C Hub,Electronics,1614.65
+574,1312,39,1,3160.39,3160.39,85,2025-07-01,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Business Strategy Book,Books,3160.39
+575,1312,7,1,5777.18,5777.18,85,2025-07-01,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Mechanical Keyboard,Electronics,5777.18
+576,1312,44,2,1247.36,2494.72,85,2025-07-01,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Resistance Bands Set,Sports,1247.36
+577,1313,41,1,3257.85,3257.85,50,2025-12-19,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Adjustable Dumbbell Set,Sports,2567.5
+578,1313,1,1,620.58,620.58,50,2025-12-19,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Wireless Earbuds,Electronics,620.58
+579,1313,10,1,5712.1,5712.1,50,2025-12-19,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Portable SSD 1TB,Electronics,5712.1
+580,1313,43,1,2567.5,2567.5,50,2025-12-19,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Football,Sports,2567.5
+581,1314,28,2,2079.35,4158.7,86,2025-10-24,Delivered,Anika Menon,anika.menon86@example.com,Bengaluru,2024-08-28,Storage Organizer Box,Home & Kitchen,2079.35
+582,1315,38,1,2514.42,2514.42,129,2024-12-05,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Cookbook,Books,2514.42
+583,1315,1,1,620.58,620.58,129,2024-12-05,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Wireless Earbuds,Electronics,620.58
+584,1315,40,1,5930.5,5930.5,129,2024-12-05,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Yoga Mat,Sports,5930.5
+585,1315,33,2,3368.07,6736.14,129,2024-12-05,Returned,Meera Kapoor,meera.kapoor129@example.com,Mumbai,2025-11-10,Body Lotion 200ml,Beauty,3368.07
+586,1316,19,2,1211.71,2423.42,85,2025-07-25,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Sports Cap,Fashion,1211.71
+589,1318,13,1,1726.64,1726.64,54,2024-10-29,Returned,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Denim Jacket,Fashion,1726.64
+590,1318,36,2,2041.15,4082.3,54,2024-10-29,Returned,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Self-Help Book,Books,2041.15
+591,1319,43,1,2567.5,2567.5,73,2024-12-22,Shipped,Rohan Pillai,rohan.pillai73@example.com,Delhi,2025-11-26,Football,Sports,2567.5
+592,1319,9,2,3514.91,7029.82,73,2024-12-22,Shipped,Rohan Pillai,rohan.pillai73@example.com,Delhi,2025-11-26,Webcam HD,Electronics,3514.91
+593,1319,1,3,620.58,1861.7400000000002,73,2024-12-22,Shipped,Rohan Pillai,rohan.pillai73@example.com,Delhi,2025-11-26,Wireless Earbuds,Electronics,620.58
+594,1319,5,1,1614.65,1614.65,73,2024-12-22,Shipped,Rohan Pillai,rohan.pillai73@example.com,Delhi,2025-11-26,USB-C Hub,Electronics,1614.65
+595,1320,45,1,2266.41,2266.41,63,2025-05-09,Cancelled,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Skipping Rope,Sports,2266.41
+596,1320,39,1,3160.39,3160.39,63,2025-05-09,Cancelled,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Business Strategy Book,Books,3160.39
+597,1320,28,1,2079.35,2079.35,63,2025-05-09,Cancelled,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Storage Organizer Box,Home & Kitchen,2079.35
+598,1321,1,1,620.58,620.58,128,2024-11-22,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Wireless Earbuds,Electronics,620.58
+599,1322,33,1,3368.07,3368.07,59,2024-01-24,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Body Lotion 200ml,Beauty,3368.07
+600,1323,3,1,2677.37,2677.37,85,2024-09-06,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Smartwatch,Electronics,2677.37
+601,1323,37,1,5825.58,5825.58,85,2024-09-06,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Children's Story Set,Books,5825.58
+603,1325,30,1,1836.07,1836.07,96,2025-10-17,Returned,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Sunscreen SPF50,Beauty,1836.07
+604,1325,34,1,2810.73,2810.73,96,2025-10-17,Returned,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Shampoo 340ml,Beauty,2810.73
+605,1325,6,1,684.26,684.26,96,2025-10-17,Returned,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Power Bank 10000mAh,Electronics,684.26
+606,1326,35,1,1989.93,1989.93,102,2025-04-05,Returned,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Fiction Bestseller,Books,1989.93
+607,1326,38,1,2514.42,2514.42,102,2025-04-05,Returned,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Cookbook,Books,2514.42
+608,1327,33,1,3368.07,3368.07,106,2024-10-12,Delivered,Anika Bhat,anika.bhat106@example.com,Bengaluru,2025-02-07,Body Lotion 200ml,Beauty,3368.07
+609,1327,31,1,5679.38,5679.38,106,2024-10-12,Delivered,Anika Bhat,anika.bhat106@example.com,Bengaluru,2025-02-07,Lip Balm Pack,Beauty,5679.38
+610,1328,11,1,5997.5,5997.5,34,2024-07-10,Cancelled,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Men's Cotton T-Shirt,Fashion,5997.5
+611,1329,37,1,5825.58,5825.58,135,2025-11-17,Processing,Krishna Sharma,krishna.sharma135@example.com,Unknown,2025-06-30,Children's Story Set,Books,5825.58
+612,1329,17,1,3961.33,3961.33,135,2025-11-17,Processing,Krishna Sharma,krishna.sharma135@example.com,Unknown,2025-06-30,Formal Shirt,Fashion,3961.33
+613,1330,40,1,5930.5,5930.5,25,2025-02-01,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Yoga Mat,Sports,5930.5
+614,1330,2,2,383.19,766.38,25,2025-02-01,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Bluetooth Speaker,Electronics,383.19
+615,1330,19,1,1211.71,1211.71,25,2025-02-01,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Sports Cap,Fashion,1211.71
+616,1330,32,2,233.09,466.18,25,2025-02-01,Returned,Aarohi Reddy,aarohi.reddy25@example.com,Ahmedabad,2025-10-02,Hair Serum,Beauty,3089.4
+617,1331,38,2,2514.42,5028.84,91,2025-09-24,Delivered,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Cookbook,Books,2514.42
+618,1332,12,1,4082.85,4082.85,69,2025-09-21,Delivered,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Women's Kurti,Fashion,4082.85
+619,1333,34,1,2810.73,2810.73,123,2024-11-08,Delivered,Aadhya Kapoor,aadhya.kapoor123@example.com,Kolkata,2025-04-20,Shampoo 340ml,Beauty,2810.73
+620,1333,3,1,2677.37,2677.37,123,2024-11-08,Delivered,Aadhya Kapoor,aadhya.kapoor123@example.com,Kolkata,2025-04-20,Smartwatch,Electronics,2677.37
+621,1334,32,2,2565.75,5131.5,34,2025-09-02,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Hair Serum,Beauty,3089.4
+622,1335,41,1,4446.01,4446.01,18,2025-10-12,Delivered,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Adjustable Dumbbell Set,Sports,2567.5
+623,1335,11,1,5997.5,5997.5,18,2025-10-12,Delivered,Riya Rao,riya.rao18@example.com,Pune,2025-08-21,Men's Cotton T-Shirt,Fashion,5997.5
+624,1336,11,1,5997.5,5997.5,72,2024-07-10,Cancelled,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Men's Cotton T-Shirt,Fashion,5997.5
+625,1337,35,1,1989.93,1989.93,19,2024-01-10,Processing,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Fiction Bestseller,Books,1989.93
+626,1337,15,1,4574.17,4574.17,19,2024-01-10,Processing,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Leather Wallet,Fashion,4574.17
+627,1338,1,1,620.58,620.58,143,2025-10-30,Processing,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Wireless Earbuds,Electronics,620.58
+628,1338,19,1,1211.71,1211.71,143,2025-10-30,Processing,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Sports Cap,Fashion,1211.71
+629,1338,29,1,3258.07,3258.07,143,2025-10-30,Processing,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Face Wash 100ml,Beauty,3089.4
+630,1339,40,1,5930.5,5930.5,30,2025-05-15,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Yoga Mat,Sports,5930.5
+631,1339,42,1,3324.17,3324.17,30,2025-05-15,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Cricket Bat,Sports,3324.17
+632,1339,18,1,5509.03,5509.03,30,2025-05-15,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Women's Handbag,Fashion,5509.03
+633,1340,44,2,1247.36,2494.72,150,2024-02-03,Shipped,Neha Patel,neha.patel150@example.com,Chennai,2024-05-07,Resistance Bands Set,Sports,1247.36
+634,1340,38,1,2514.42,2514.42,150,2024-02-03,Shipped,Neha Patel,neha.patel150@example.com,Chennai,2024-05-07,Cookbook,Books,2514.42
+635,1341,1,1,620.58,620.58,31,2025-05-22,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Wireless Earbuds,Electronics,620.58
+636,1342,7,1,5777.18,5777.18,32,2025-01-10,Delivered,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Mechanical Keyboard,Electronics,5777.18
+637,1343,19,1,1211.71,1211.71,112,2025-03-11,Delivered,Kabir Nair,kabir.nair112@example.com,Chennai,2025-11-16,Sports Cap,Fashion,1211.71
+638,1344,4,1,2035.58,2035.58,127,2024-10-31,Delivered,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Laptop Stand,Electronics,2035.58
+639,1344,39,3,3160.39,9481.17,127,2024-10-31,Delivered,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Business Strategy Book,Books,3160.39
+640,1345,8,2,5040.36,10080.72,45,2025-03-25,Delivered,Ayaan Bansal,ayaan.bansal45@example.com,Mumbai,2025-03-09,Wireless Mouse,Electronics,5040.36
+641,1345,6,1,684.26,684.26,45,2025-03-25,Delivered,Ayaan Bansal,ayaan.bansal45@example.com,Mumbai,2025-03-09,Power Bank 10000mAh,Electronics,684.26
+642,1346,12,1,4082.85,4082.85,59,2025-12-06,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Women's Kurti,Fashion,4082.85
+643,1346,8,1,5040.36,5040.36,59,2025-12-06,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Wireless Mouse,Electronics,5040.36
+644,1347,18,1,5509.03,5509.03,8,2024-06-18,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Women's Handbag,Fashion,5509.03
+645,1347,28,2,2079.35,4158.7,8,2024-06-18,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Storage Organizer Box,Home & Kitchen,2079.35
+646,1348,18,1,5509.03,5509.03,31,2025-08-06,Cancelled,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Women's Handbag,Fashion,5509.03
+647,1348,4,1,2035.58,2035.58,31,2025-08-06,Cancelled,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Laptop Stand,Electronics,2035.58
+648,1348,25,1,2099.85,2099.85,31,2025-08-06,Cancelled,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Cotton Bedsheet Set,Home & Kitchen,2099.85
+649,1349,13,1,1726.64,1726.64,87,2024-11-27,Shipped,Arjun Nair,arjun.nair87@example.com,Bengaluru,2024-02-17,Denim Jacket,Fashion,1726.64
+650,1349,40,1,5930.5,5930.5,87,2024-11-27,Shipped,Arjun Nair,arjun.nair87@example.com,Bengaluru,2024-02-17,Yoga Mat,Sports,5930.5
+651,1349,26,1,4070.28,4070.28,87,2024-11-27,Shipped,Arjun Nair,arjun.nair87@example.com,Bengaluru,2024-02-17,Vacuum Flask,Home & Kitchen,4070.28
+652,1349,12,1,4082.85,4082.85,87,2024-11-27,Shipped,Arjun Nair,arjun.nair87@example.com,Bengaluru,2024-02-17,Women's Kurti,Fashion,4082.85
+653,1350,5,1,1614.65,1614.65,49,2024-05-18,Returned,Ishaan Iyer,ishaan.iyer49@example.com,Hyderabad,2024-03-10,USB-C Hub,Electronics,1614.65
+654,1351,32,1,3895.96,3895.96,65,2025-12-19,Delivered,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Hair Serum,Beauty,3089.4
+655,1352,18,2,5509.03,11018.06,93,2025-05-16,Delivered,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Women's Handbag,Fashion,5509.03
+656,1352,10,1,5712.1,5712.1,93,2025-05-16,Delivered,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Portable SSD 1TB,Electronics,5712.1
+657,1353,32,2,4718.48,9436.96,69,2025-01-19,Processing,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Hair Serum,Beauty,3089.4
+658,1353,31,1,5679.38,5679.38,69,2025-01-19,Processing,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Lip Balm Pack,Beauty,5679.38
+659,1353,28,3,2079.35,6238.049999999999,69,2025-01-19,Processing,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Storage Organizer Box,Home & Kitchen,2079.35
+660,1353,26,1,4070.28,4070.28,69,2025-01-19,Processing,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Vacuum Flask,Home & Kitchen,4070.28
+661,1354,23,1,683.77,683.77,63,2025-06-11,Shipped,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,LED Desk Lamp,Home & Kitchen,683.77
+662,1354,22,3,3026.6,9079.8,63,2025-06-11,Shipped,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Electric Kettle,Home & Kitchen,3026.6
+663,1354,44,1,1247.36,1247.36,63,2025-06-11,Shipped,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Resistance Bands Set,Sports,1247.36
+664,1354,20,1,3574.18,3574.18,63,2025-06-11,Shipped,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Sneakers,Fashion,3574.18
+665,1355,42,1,3324.17,3324.17,75,2025-05-14,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Cricket Bat,Sports,3324.17
+666,1355,13,1,1726.64,1726.64,75,2025-05-14,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Denim Jacket,Fashion,1726.64
+667,1355,12,1,4082.85,4082.85,75,2025-05-14,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Women's Kurti,Fashion,4082.85
+668,1356,32,2,2712.2,5424.4,48,2025-04-14,Cancelled,Aarohi Pillai,aarohi.pillai48@example.com,Bengaluru,2024-02-28,Hair Serum,Beauty,3089.4
+669,1356,6,1,684.26,684.26,48,2025-04-14,Cancelled,Aarohi Pillai,aarohi.pillai48@example.com,Bengaluru,2024-02-28,Power Bank 10000mAh,Electronics,684.26
+670,1357,16,2,2902.43,5804.86,76,2024-08-11,Returned,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Sunglasses,Fashion,2902.43
+671,1357,32,1,5794.98,5794.98,76,2024-08-11,Returned,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Hair Serum,Beauty,3089.4
+672,1357,25,3,2099.85,6299.549999999999,76,2024-08-11,Returned,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Cotton Bedsheet Set,Home & Kitchen,2099.85
+673,1357,5,1,1614.65,1614.65,76,2024-08-11,Returned,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,USB-C Hub,Electronics,1614.65
+674,1358,26,1,4070.28,4070.28,24,2024-10-17,Cancelled,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Vacuum Flask,Home & Kitchen,4070.28
+675,1358,8,1,5040.36,5040.36,24,2024-10-17,Cancelled,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Wireless Mouse,Electronics,5040.36
+676,1359,35,1,1989.93,1989.93,96,2024-12-17,Delivered,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Fiction Bestseller,Books,1989.93
+677,1359,10,2,5712.1,11424.2,96,2024-12-17,Delivered,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Portable SSD 1TB,Electronics,5712.1
+678,1359,38,1,2514.42,2514.42,96,2024-12-17,Delivered,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Cookbook,Books,2514.42
+681,1361,7,1,5777.18,5777.18,8,2024-07-26,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Mechanical Keyboard,Electronics,5777.18
+682,1361,30,2,1836.07,3672.14,8,2024-07-26,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Sunscreen SPF50,Beauty,1836.07
+683,1361,40,1,5930.5,5930.5,8,2024-07-26,Delivered,Riya Reddy,riya.reddy8@example.com,Delhi,2024-03-21,Yoga Mat,Sports,5930.5
+684,1362,13,1,1726.64,1726.64,141,2024-04-05,Cancelled,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Denim Jacket,Fashion,1726.64
+685,1363,44,3,1247.36,3742.08,85,2024-02-23,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Resistance Bands Set,Sports,1247.36
+686,1363,26,1,4070.28,4070.28,85,2024-02-23,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Vacuum Flask,Home & Kitchen,4070.28
+687,1363,21,2,3863.49,7726.98,85,2024-02-23,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Non-Stick Pan Set,Home & Kitchen,3863.49
+688,1363,8,1,5040.36,5040.36,85,2024-02-23,Returned,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Wireless Mouse,Electronics,5040.36
+690,1365,11,1,5997.5,5997.5,50,2024-03-20,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Men's Cotton T-Shirt,Fashion,5997.5
+691,1366,7,2,5777.18,11554.36,30,2024-01-10,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Mechanical Keyboard,Electronics,5777.18
+692,1367,11,1,5997.5,5997.5,113,2025-12-11,Delivered,Aadhya Rao,aadhya.rao113@example.com,Kolkata,2025-01-12,Men's Cotton T-Shirt,Fashion,5997.5
+693,1368,12,3,4082.85,12248.55,46,2024-04-14,Delivered,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,Women's Kurti,Fashion,4082.85
+694,1369,19,1,1211.71,1211.71,71,2025-01-26,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Sports Cap,Fashion,1211.71
+695,1369,27,1,5167.74,5167.74,71,2025-01-26,Delivered,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Ceramic Dinner Set,Home & Kitchen,5167.74
+696,1370,18,1,5509.03,5509.03,36,2025-06-27,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Women's Handbag,Fashion,5509.03
+697,1371,40,1,5930.5,5930.5,61,2024-08-06,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Yoga Mat,Sports,5930.5
+698,1371,45,3,2266.41,6799.23,61,2024-08-06,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Skipping Rope,Sports,2266.41
+699,1371,3,2,2677.37,5354.74,61,2024-08-06,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Smartwatch,Electronics,2677.37
+700,1371,39,1,3160.39,3160.39,61,2024-08-06,Delivered,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Business Strategy Book,Books,3160.39
+701,1372,34,3,2810.73,8432.19,58,2024-08-10,Delivered,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Shampoo 340ml,Beauty,2810.73
+702,1373,35,1,1989.93,1989.93,64,2025-08-26,Returned,Sneha Joshi,sneha.joshi64@example.com,Hyderabad,2025-07-19,Fiction Bestseller,Books,1989.93
+703,1373,33,1,3368.07,3368.07,64,2025-08-26,Returned,Sneha Joshi,sneha.joshi64@example.com,Hyderabad,2025-07-19,Body Lotion 200ml,Beauty,3368.07
+704,1373,15,1,4574.17,4574.17,64,2025-08-26,Returned,Sneha Joshi,sneha.joshi64@example.com,Hyderabad,2025-07-19,Leather Wallet,Fashion,4574.17
+705,1374,31,1,5679.38,5679.38,72,2024-09-10,Shipped,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Lip Balm Pack,Beauty,5679.38
+706,1374,32,1,2280.53,2280.53,72,2024-09-10,Shipped,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Hair Serum,Beauty,3089.4
+707,1374,12,1,4082.85,4082.85,72,2024-09-10,Shipped,Isha Menon,isha.menon72@example.com,Mumbai,2024-03-12,Women's Kurti,Fashion,4082.85
+708,1375,30,2,1836.07,3672.14,127,2025-09-06,Shipped,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Sunscreen SPF50,Beauty,1836.07
+709,1375,3,1,2677.37,2677.37,127,2025-09-06,Shipped,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Smartwatch,Electronics,2677.37
+710,1375,7,1,5777.18,5777.18,127,2025-09-06,Shipped,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Mechanical Keyboard,Electronics,5777.18
+711,1376,29,1,4520.46,4520.46,34,2024-07-29,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Face Wash 100ml,Beauty,3089.4
+712,1376,38,1,2514.42,2514.42,34,2024-07-29,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Cookbook,Books,2514.42
+713,1376,21,1,3863.49,3863.49,34,2024-07-29,Delivered,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Non-Stick Pan Set,Home & Kitchen,3863.49
+714,1377,13,1,1726.64,1726.64,28,2024-09-02,Processing,Ananya Patel,ananya.patel28@example.com,Mumbai,2024-02-29,Denim Jacket,Fashion,1726.64
+715,1378,32,2,997.91,1995.82,63,2025-08-31,Delivered,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Hair Serum,Beauty,3089.4
+716,1378,4,1,2035.58,2035.58,63,2025-08-31,Delivered,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Laptop Stand,Electronics,2035.58
+717,1379,13,1,1726.64,1726.64,50,2024-11-20,Delivered,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Denim Jacket,Fashion,1726.64
+718,1380,9,1,3514.91,3514.91,74,2025-01-09,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Webcam HD,Electronics,3514.91
+719,1381,8,2,5040.36,10080.72,38,2024-01-18,Delivered,Sai Chawla,sai.chawla38@example.com,Delhi,2025-03-09,Wireless Mouse,Electronics,5040.36
+720,1382,22,1,3026.6,3026.6,76,2025-06-02,Shipped,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Electric Kettle,Home & Kitchen,3026.6
+721,1383,41,3,5447.63,16342.89,69,2025-03-09,Returned,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Adjustable Dumbbell Set,Sports,2567.5
+722,1384,15,1,4574.17,4574.17,143,2024-03-26,Shipped,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Leather Wallet,Fashion,4574.17
+723,1384,6,2,684.26,1368.52,143,2024-03-26,Shipped,Kiara Chawla,kiara.chawla143@example.com,Mumbai,2025-08-05,Power Bank 10000mAh,Electronics,684.26
+724,1385,30,1,1836.07,1836.07,80,2025-07-03,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Sunscreen SPF50,Beauty,1836.07
+725,1385,18,2,5509.03,11018.06,80,2025-07-03,Cancelled,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Women's Handbag,Fashion,5509.03
+726,1386,15,2,4574.17,9148.34,148,2024-03-08,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Leather Wallet,Fashion,4574.17
+727,1387,37,2,5825.58,11651.16,123,2024-02-29,Delivered,Aadhya Kapoor,aadhya.kapoor123@example.com,Kolkata,2025-04-20,Children's Story Set,Books,5825.58
+728,1388,31,2,5679.38,11358.76,36,2024-02-26,Shipped,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Lip Balm Pack,Beauty,5679.38
+729,1389,26,1,4070.28,4070.28,90,2024-05-02,Delivered,Aarav Reddy,aarav.reddy90@example.com,Kolkata,2025-03-11,Vacuum Flask,Home & Kitchen,4070.28
+730,1390,29,1,4555.51,4555.51,84,2025-05-23,Cancelled,Aadhya Bansal,aadhya.bansal84@example.com,Pune,2024-08-06,Face Wash 100ml,Beauty,3089.4
+731,1390,32,1,1425.34,1425.34,84,2025-05-23,Cancelled,Aadhya Bansal,aadhya.bansal84@example.com,Pune,2024-08-06,Hair Serum,Beauty,3089.4
+732,1390,16,1,2902.43,2902.43,84,2025-05-23,Cancelled,Aadhya Bansal,aadhya.bansal84@example.com,Pune,2024-08-06,Sunglasses,Fashion,2902.43
+733,1391,43,1,2567.5,2567.5,133,2024-06-19,Cancelled,Myra Rao,myra.rao133@example.com,Pune,2025-08-26,Football,Sports,2567.5
+734,1392,38,1,2514.42,2514.42,61,2024-01-31,Cancelled,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Cookbook,Books,2514.42
+735,1392,2,2,383.19,766.38,61,2024-01-31,Cancelled,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Bluetooth Speaker,Electronics,383.19
+736,1392,30,2,1836.07,3672.14,61,2024-01-31,Cancelled,Ayaan Verma,ayaan.verma61@example.com,Bengaluru,2024-12-07,Sunscreen SPF50,Beauty,1836.07
+737,1393,1,1,620.58,620.58,33,2024-09-26,Delivered,Ananya Bansal,ananya.bansal33@example.com,Chennai,2025-04-07,Wireless Earbuds,Electronics,620.58
+738,1393,41,1,341.38,341.38,33,2024-09-26,Delivered,Ananya Bansal,ananya.bansal33@example.com,Chennai,2025-04-07,Adjustable Dumbbell Set,Sports,2567.5
+739,1394,40,1,5930.5,5930.5,29,2025-05-26,Delivered,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Yoga Mat,Sports,5930.5
+740,1395,6,2,684.26,1368.52,53,2025-08-10,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Power Bank 10000mAh,Electronics,684.26
+741,1395,40,3,5930.5,17791.5,53,2025-08-10,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Yoga Mat,Sports,5930.5
+742,1395,22,2,3026.6,6053.2,53,2025-08-10,Delivered,Diya Iyer,diya.iyer53@example.com,Bengaluru,2025-04-14,Electric Kettle,Home & Kitchen,3026.6
+743,1396,40,1,5930.5,5930.5,7,2024-09-07,Delivered,Ananya Joshi,ananya.joshi7@example.com,Hyderabad,2024-09-27,Yoga Mat,Sports,5930.5
+744,1397,5,2,1614.65,3229.3,77,2024-07-02,Delivered,Vivaan Chawla,vivaan.chawla77@example.com,Bengaluru,2025-06-16,USB-C Hub,Electronics,1614.65
+746,1398,31,2,5679.38,11358.76,34,2024-08-17,Cancelled,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Lip Balm Pack,Beauty,5679.38
+747,1399,45,1,2266.41,2266.41,40,2025-08-08,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Skipping Rope,Sports,2266.41
+748,1399,14,1,385.36,385.36,40,2025-08-08,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Running Shoes,Fashion,385.36
+749,1399,15,1,4574.17,4574.17,40,2025-08-08,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Leather Wallet,Fashion,4574.17
+750,1400,33,2,3368.07,6736.14,115,2025-06-12,Delivered,Aarav Patel,aarav.patel115@example.com,Hyderabad,2025-11-24,Body Lotion 200ml,Beauty,3368.07
+751,1400,34,1,2810.73,2810.73,115,2025-06-12,Delivered,Aarav Patel,aarav.patel115@example.com,Hyderabad,2025-11-24,Shampoo 340ml,Beauty,2810.73
+752,1401,29,2,5680.39,11360.78,140,2024-10-16,Shipped,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Face Wash 100ml,Beauty,3089.4
+753,1401,40,3,5930.5,17791.5,140,2024-10-16,Shipped,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Yoga Mat,Sports,5930.5
+754,1401,24,2,2185.57,4371.14,140,2024-10-16,Shipped,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Air Fryer,Home & Kitchen,2185.57
+755,1402,12,1,4082.85,4082.85,5,2025-01-12,Delivered,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Women's Kurti,Fashion,4082.85
+756,1403,18,1,5509.03,5509.03,125,2025-04-20,Cancelled,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Women's Handbag,Fashion,5509.03
+759,1406,29,2,275.67,551.34,99,2024-11-10,Delivered,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Face Wash 100ml,Beauty,3089.4
+760,1407,15,2,4574.17,9148.34,31,2024-05-25,Shipped,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Leather Wallet,Fashion,4574.17
+761,1408,38,1,2514.42,2514.42,63,2025-02-26,Cancelled,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Cookbook,Books,2514.42
+762,1409,38,1,2514.42,2514.42,107,2024-04-07,Delivered,Aditya Chawla,aditya.chawla107@example.com,Bengaluru,2025-04-17,Cookbook,Books,2514.42
+763,1410,30,1,1836.07,1836.07,19,2025-08-04,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Sunscreen SPF50,Beauty,1836.07
+764,1410,20,1,3574.18,3574.18,19,2025-08-04,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Sneakers,Fashion,3574.18
+765,1411,24,3,2185.57,6556.710000000001,122,2024-10-25,Shipped,Sneha Rao,sneha.rao122@example.com,Delhi,2024-09-08,Air Fryer,Home & Kitchen,2185.57
+766,1412,23,1,683.77,683.77,93,2025-12-18,Cancelled,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,LED Desk Lamp,Home & Kitchen,683.77
+767,1413,11,1,5997.5,5997.5,39,2024-07-26,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Men's Cotton T-Shirt,Fashion,5997.5
+768,1413,35,2,1989.93,3979.86,39,2024-07-26,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Fiction Bestseller,Books,1989.93
+769,1414,10,1,5712.1,5712.1,80,2024-04-18,Delivered,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Portable SSD 1TB,Electronics,5712.1
+770,1414,11,1,5997.5,5997.5,80,2024-04-18,Delivered,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Men's Cotton T-Shirt,Fashion,5997.5
+771,1415,12,1,4082.85,4082.85,62,2025-07-02,Cancelled,Ayaan Gupta,ayaan.gupta62@example.com,Pune,2025-03-28,Women's Kurti,Fashion,4082.85
+772,1416,23,1,683.77,683.77,125,2025-04-19,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,LED Desk Lamp,Home & Kitchen,683.77
+773,1416,10,1,5712.1,5712.1,125,2025-04-19,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Portable SSD 1TB,Electronics,5712.1
+774,1417,26,3,4070.28,12210.84,74,2025-12-22,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Vacuum Flask,Home & Kitchen,4070.28
+775,1417,32,3,3344.95,10034.849999999999,74,2025-12-22,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Hair Serum,Beauty,3089.4
+776,1417,10,1,5712.1,5712.1,74,2025-12-22,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Portable SSD 1TB,Electronics,5712.1
+777,1417,30,2,1836.07,3672.14,74,2025-12-22,Delivered,Aarav Reddy,aarav.reddy74@example.com,Mumbai,2024-07-01,Sunscreen SPF50,Beauty,1836.07
+778,1418,37,2,5825.58,11651.16,128,2024-12-30,Returned,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Children's Story Set,Books,5825.58
+779,1418,43,3,2567.5,7702.5,128,2024-12-30,Returned,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Football,Sports,2567.5
+780,1418,10,1,5712.1,5712.1,128,2024-12-30,Returned,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Portable SSD 1TB,Electronics,5712.1
+781,1419,44,1,1247.36,1247.36,134,2024-06-27,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Resistance Bands Set,Sports,1247.36
+782,1420,15,1,4574.17,4574.17,105,2025-07-17,Delivered,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,Leather Wallet,Fashion,4574.17
+783,1421,42,1,3324.17,3324.17,63,2024-01-13,Delivered,Aarav Reddy,aarav.reddy63@example.com,Bengaluru,2025-12-08,Cricket Bat,Sports,3324.17
+784,1422,18,1,5509.03,5509.03,67,2024-07-21,Returned,Anika Nair,anika.nair67@example.com,Mumbai,2024-06-15,Women's Handbag,Fashion,5509.03
+785,1422,13,1,1726.64,1726.64,67,2024-07-21,Returned,Anika Nair,anika.nair67@example.com,Mumbai,2024-06-15,Denim Jacket,Fashion,1726.64
+786,1422,2,3,383.19,1149.57,67,2024-07-21,Returned,Anika Nair,anika.nair67@example.com,Mumbai,2024-06-15,Bluetooth Speaker,Electronics,383.19
+787,1423,39,3,3160.39,9481.17,44,2025-08-19,Shipped,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Business Strategy Book,Books,3160.39
+788,1423,33,1,3368.07,3368.07,44,2025-08-19,Shipped,Arjun Malhotra,arjun.malhotra44@example.com,Bengaluru,2024-06-17,Body Lotion 200ml,Beauty,3368.07
+789,1424,24,1,2185.57,2185.57,34,2024-07-21,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Air Fryer,Home & Kitchen,2185.57
+790,1424,25,3,2099.85,6299.549999999999,34,2024-07-21,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Cotton Bedsheet Set,Home & Kitchen,2099.85
+791,1424,1,1,620.58,620.58,34,2024-07-21,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Wireless Earbuds,Electronics,620.58
+792,1425,27,2,5167.74,10335.48,31,2024-05-05,Delivered,Ayaan Pillai,ayaan.pillai31@example.com,Ahmedabad,2025-09-13,Ceramic Dinner Set,Home & Kitchen,5167.74
+793,1426,28,2,2079.35,4158.7,66,2025-03-19,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Storage Organizer Box,Home & Kitchen,2079.35
+794,1426,27,1,5167.74,5167.74,66,2025-03-19,Returned,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Ceramic Dinner Set,Home & Kitchen,5167.74
+796,1427,38,2,2514.42,5028.84,32,2024-06-25,Cancelled,Riya Singh,riya.singh32@example.com,Pune,2024-11-15,Cookbook,Books,2514.42
+797,1428,18,1,5509.03,5509.03,77,2024-02-05,Delivered,Vivaan Chawla,vivaan.chawla77@example.com,Bengaluru,2025-06-16,Women's Handbag,Fashion,5509.03
+798,1429,9,1,3514.91,3514.91,41,2025-05-05,Delivered,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Webcam HD,Electronics,3514.91
+799,1429,13,1,1726.64,1726.64,41,2025-05-05,Delivered,Ishaan Rao,ishaan.rao41@example.com,Chennai,2024-09-12,Denim Jacket,Fashion,1726.64
+800,1430,38,1,2514.42,2514.42,148,2025-06-22,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Cookbook,Books,2514.42
+801,1430,20,1,3574.18,3574.18,148,2025-06-22,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Sneakers,Fashion,3574.18
+802,1430,32,1,5742.76,5742.76,148,2025-06-22,Delivered,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Hair Serum,Beauty,3089.4
+803,1431,42,2,3324.17,6648.34,10,2025-01-26,Cancelled,Kabir Patel,kabir.patel10@example.com,Bengaluru,2024-08-26,Cricket Bat,Sports,3324.17
+804,1431,43,1,2567.5,2567.5,10,2025-01-26,Cancelled,Kabir Patel,kabir.patel10@example.com,Bengaluru,2024-08-26,Football,Sports,2567.5
+805,1432,8,2,5040.36,10080.72,54,2025-08-02,Cancelled,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Wireless Mouse,Electronics,5040.36
+806,1433,39,1,3160.39,3160.39,4,2025-09-03,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Business Strategy Book,Books,3160.39
+807,1433,24,1,2185.57,2185.57,4,2025-09-03,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Air Fryer,Home & Kitchen,2185.57
+808,1433,38,1,2514.42,2514.42,4,2025-09-03,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Cookbook,Books,2514.42
+809,1433,31,1,5679.38,5679.38,4,2025-09-03,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Lip Balm Pack,Beauty,5679.38
+810,1434,11,1,5997.5,5997.5,59,2025-06-26,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Men's Cotton T-Shirt,Fashion,5997.5
+811,1434,38,1,2514.42,2514.42,59,2025-06-26,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Cookbook,Books,2514.42
+812,1434,4,1,2035.58,2035.58,59,2025-06-26,Cancelled,Arjun Menon,arjun.menon59@example.com,Mumbai,2025-12-04,Laptop Stand,Electronics,2035.58
+813,1435,23,1,683.77,683.77,82,2024-04-12,Delivered,Anika Patel,anika.patel82@example.com,Delhi,2025-07-15,LED Desk Lamp,Home & Kitchen,683.77
+814,1435,4,3,2035.58,6106.74,82,2024-04-12,Delivered,Anika Patel,anika.patel82@example.com,Delhi,2025-07-15,Laptop Stand,Electronics,2035.58
+815,1436,12,2,4082.85,8165.7,29,2024-08-12,Returned,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Women's Kurti,Fashion,4082.85
+816,1436,7,2,5777.18,11554.36,29,2024-08-12,Returned,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Mechanical Keyboard,Electronics,5777.18
+817,1436,39,1,3160.39,3160.39,29,2024-08-12,Returned,Aditya Iyer,aditya.iyer29@example.com,Pune,2025-05-12,Business Strategy Book,Books,3160.39
+818,1437,45,1,2266.41,2266.41,89,2024-06-29,Delivered,Meera Malhotra,meera.malhotra89@example.com,Chennai,2025-02-13,Skipping Rope,Sports,2266.41
+819,1437,24,2,2185.57,4371.14,89,2024-06-29,Delivered,Meera Malhotra,meera.malhotra89@example.com,Chennai,2025-02-13,Air Fryer,Home & Kitchen,2185.57
+820,1438,24,1,2185.57,2185.57,19,2025-08-28,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Air Fryer,Home & Kitchen,2185.57
+821,1438,32,1,1424.58,1424.58,19,2025-08-28,Delivered,Ananya Kapoor,ananya.kapoor19@example.com,Bengaluru,2025-06-05,Hair Serum,Beauty,3089.4
+822,1439,36,2,2041.15,4082.3,40,2025-07-31,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Self-Help Book,Books,2041.15
+823,1439,40,1,5930.5,5930.5,40,2025-07-31,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Yoga Mat,Sports,5930.5
+824,1439,45,2,2266.41,4532.82,40,2025-07-31,Delivered,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Skipping Rope,Sports,2266.41
+825,1440,5,2,1614.65,3229.3,99,2025-07-09,Shipped,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,USB-C Hub,Electronics,1614.65
+826,1440,8,1,5040.36,5040.36,99,2025-07-09,Shipped,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Wireless Mouse,Electronics,5040.36
+828,1442,20,1,3574.18,3574.18,124,2024-07-25,Delivered,Diya Sharma,diya.sharma124@example.com,Chennai,2024-11-28,Sneakers,Fashion,3574.18
+829,1443,45,1,2266.41,2266.41,24,2024-03-01,Delivered,Ishaan Bansal,ishaan.bansal24@example.com,Bengaluru,2024-09-26,Skipping Rope,Sports,2266.41
+831,1445,8,2,5040.36,10080.72,39,2025-08-23,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Wireless Mouse,Electronics,5040.36
+832,1445,5,1,1614.65,1614.65,39,2025-08-23,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,USB-C Hub,Electronics,1614.65
+833,1445,2,2,383.19,766.38,39,2025-08-23,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Bluetooth Speaker,Electronics,383.19
+834,1446,8,3,5040.36,15121.079999999998,81,2025-03-23,Processing,Arjun Chawla,arjun.chawla81@example.com,Pune,2025-01-23,Wireless Mouse,Electronics,5040.36
+835,1447,1,2,620.58,1241.16,30,2025-12-11,Cancelled,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Wireless Earbuds,Electronics,620.58
+836,1448,14,1,385.36,385.36,125,2025-12-06,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Running Shoes,Fashion,385.36
+837,1448,38,1,2514.42,2514.42,125,2025-12-06,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Cookbook,Books,2514.42
+838,1448,13,1,1726.64,1726.64,125,2025-12-06,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Denim Jacket,Fashion,1726.64
+839,1448,12,1,4082.85,4082.85,125,2025-12-06,Shipped,Rahul Rao,rahul.rao125@example.com,Delhi,2024-10-13,Women's Kurti,Fashion,4082.85
+840,1449,40,1,5930.5,5930.5,66,2025-02-04,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Yoga Mat,Sports,5930.5
+841,1449,16,1,2902.43,2902.43,66,2025-02-04,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Sunglasses,Fashion,2902.43
+842,1449,33,1,3368.07,3368.07,66,2025-02-04,Delivered,Kabir Reddy,kabir.reddy66@example.com,Delhi,2025-07-27,Body Lotion 200ml,Beauty,3368.07
+843,1450,35,1,1989.93,1989.93,102,2024-08-14,Delivered,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Fiction Bestseller,Books,1989.93
+844,1451,33,1,3368.07,3368.07,40,2024-08-31,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Body Lotion 200ml,Beauty,3368.07
+845,1451,31,3,5679.38,17038.14,40,2024-08-31,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Lip Balm Pack,Beauty,5679.38
+846,1451,24,1,2185.57,2185.57,40,2024-08-31,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Air Fryer,Home & Kitchen,2185.57
+847,1451,45,1,2266.41,2266.41,40,2024-08-31,Cancelled,Sai Kapoor,sai.kapoor40@example.com,Mumbai,2024-07-13,Skipping Rope,Sports,2266.41
+848,1452,21,1,3863.49,3863.49,46,2025-12-26,Cancelled,Rahul Bhat,rahul.bhat46@example.com,Pune,2025-05-13,Non-Stick Pan Set,Home & Kitchen,3863.49
+849,1453,24,2,2185.57,4371.14,128,2025-12-10,Delivered,Rohan Mehta,rohan.mehta128@example.com,Chennai,2024-01-18,Air Fryer,Home & Kitchen,2185.57
+850,1454,21,1,3863.49,3863.49,1,2024-02-19,Returned,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Non-Stick Pan Set,Home & Kitchen,3863.49
+851,1455,20,3,3574.18,10722.539999999999,86,2025-02-27,Processing,Anika Menon,anika.menon86@example.com,Bengaluru,2024-08-28,Sneakers,Fashion,3574.18
+852,1455,44,1,1247.36,1247.36,86,2025-02-27,Processing,Anika Menon,anika.menon86@example.com,Bengaluru,2024-08-28,Resistance Bands Set,Sports,1247.36
+853,1456,13,3,1726.64,5179.92,99,2024-04-13,Processing,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Denim Jacket,Fashion,1726.64
+854,1456,5,1,1614.65,1614.65,99,2024-04-13,Processing,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,USB-C Hub,Electronics,1614.65
+855,1456,31,1,5679.38,5679.38,99,2024-04-13,Processing,Arjun Iyer,arjun.iyer99@example.com,Delhi,2025-02-21,Lip Balm Pack,Beauty,5679.38
+856,1457,44,1,1247.36,1247.36,116,2024-06-15,Processing,Meera Singh,meera.singh116@example.com,Bengaluru,2025-08-29,Resistance Bands Set,Sports,1247.36
+857,1457,6,1,684.26,684.26,116,2024-06-15,Processing,Meera Singh,meera.singh116@example.com,Bengaluru,2025-08-29,Power Bank 10000mAh,Electronics,684.26
+858,1458,11,1,5997.5,5997.5,4,2024-09-24,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Men's Cotton T-Shirt,Fashion,5997.5
+859,1458,5,1,1614.65,1614.65,4,2024-09-24,Delivered,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,USB-C Hub,Electronics,1614.65
+860,1459,15,2,4574.17,9148.34,39,2025-07-14,Delivered,Vivaan Reddy,vivaan.reddy39@example.com,Bengaluru,2025-02-16,Leather Wallet,Fashion,4574.17
+861,1460,38,1,2514.42,2514.42,127,2025-12-22,Delivered,Neha Chawla,neha.chawla127@example.com,Chennai,2025-07-22,Cookbook,Books,2514.42
+862,1461,26,1,4070.28,4070.28,9,2025-03-20,Delivered,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Vacuum Flask,Home & Kitchen,4070.28
+864,1461,31,1,5679.38,5679.38,9,2025-03-20,Delivered,Anika Joshi,anika.joshi9@example.com,Unknown,2024-07-15,Lip Balm Pack,Beauty,5679.38
+865,1462,32,1,3825.97,3825.97,148,2025-12-14,Shipped,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Hair Serum,Beauty,3089.4
+866,1463,4,2,2035.58,4071.16,50,2024-02-20,Returned,Sai Kapoor,unknown@example.com,Hyderabad,2025-08-31,Laptop Stand,Electronics,2035.58
+867,1464,12,1,4082.85,4082.85,79,2024-02-25,Cancelled,Diya Menon,diya.menon79@example.com,Pune,2024-05-07,Women's Kurti,Fashion,4082.85
+868,1465,40,1,5930.5,5930.5,37,2025-09-06,Processing,Reyansh Mehta,reyansh.mehta37@example.com,Mumbai,2025-04-29,Yoga Mat,Sports,5930.5
+869,1466,34,2,2810.73,5621.46,150,2024-03-24,Processing,Neha Patel,neha.patel150@example.com,Chennai,2024-05-07,Shampoo 340ml,Beauty,2810.73
+870,1466,32,1,3017.96,3017.96,150,2024-03-24,Processing,Neha Patel,neha.patel150@example.com,Chennai,2024-05-07,Hair Serum,Beauty,3089.4
+871,1467,35,1,1989.93,1989.93,76,2025-04-27,Processing,Saanvi Pillai,saanvi.pillai76@example.com,Bengaluru,2025-01-29,Fiction Bestseller,Books,1989.93
+872,1468,28,2,2079.35,4158.7,134,2025-07-11,Returned,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Storage Organizer Box,Home & Kitchen,2079.35
+873,1469,25,1,2099.85,2099.85,119,2024-02-15,Shipped,Aarohi Menon,aarohi.menon119@example.com,Bengaluru,2025-03-06,Cotton Bedsheet Set,Home & Kitchen,2099.85
+874,1469,29,1,5183.11,5183.11,119,2024-02-15,Shipped,Aarohi Menon,aarohi.menon119@example.com,Bengaluru,2025-03-06,Face Wash 100ml,Beauty,3089.4
+875,1470,32,1,4336.98,4336.98,138,2025-07-31,Delivered,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Hair Serum,Beauty,3089.4
+876,1470,28,1,2079.35,2079.35,138,2025-07-31,Delivered,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Storage Organizer Box,Home & Kitchen,2079.35
+877,1471,44,1,1247.36,1247.36,54,2025-07-08,Returned,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Resistance Bands Set,Sports,1247.36
+878,1471,35,2,1989.93,3979.86,54,2025-07-08,Returned,Sai Iyer,sai.iyer54@example.com,Chennai,2024-08-06,Fiction Bestseller,Books,1989.93
+879,1472,32,1,2360.12,2360.12,4,2024-03-03,Returned,Rohan Bhat,rohan.bhat4@example.com,Delhi,2024-08-13,Hair Serum,Beauty,3089.4
+880,1473,19,1,1211.71,1211.71,34,2025-12-04,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Sports Cap,Fashion,1211.71
+881,1473,21,2,3863.49,7726.98,34,2025-12-04,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Non-Stick Pan Set,Home & Kitchen,3863.49
+882,1473,4,2,2035.58,4071.16,34,2025-12-04,Processing,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Laptop Stand,Electronics,2035.58
+883,1474,22,1,3026.6,3026.6,141,2024-03-21,Returned,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Electric Kettle,Home & Kitchen,3026.6
+884,1474,25,1,2099.85,2099.85,141,2024-03-21,Returned,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Cotton Bedsheet Set,Home & Kitchen,2099.85
+885,1474,7,1,5777.18,5777.18,141,2024-03-21,Returned,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Mechanical Keyboard,Electronics,5777.18
+886,1475,6,3,684.26,2052.7799999999997,65,2025-08-07,Delivered,Krishna Joshi,krishna.joshi65@example.com,Kolkata,2024-02-10,Power Bank 10000mAh,Electronics,684.26
+887,1476,22,1,3026.6,3026.6,86,2024-08-04,Delivered,Anika Menon,anika.menon86@example.com,Bengaluru,2024-08-28,Electric Kettle,Home & Kitchen,3026.6
+888,1477,43,2,2567.5,5135.0,80,2024-07-25,Delivered,Krishna Chawla,krishna.chawla80@example.com,Delhi,2025-02-16,Football,Sports,2567.5
+889,1478,18,1,5509.03,5509.03,35,2024-03-30,Returned,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Women's Handbag,Fashion,5509.03
+890,1478,2,1,383.19,383.19,35,2024-03-30,Returned,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Bluetooth Speaker,Electronics,383.19
+891,1478,45,1,2266.41,2266.41,35,2024-03-30,Returned,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Skipping Rope,Sports,2266.41
+892,1478,31,1,5679.38,5679.38,35,2024-03-30,Returned,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Lip Balm Pack,Beauty,5679.38
+894,1480,20,1,3574.18,3574.18,1,2025-08-24,Returned,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Sneakers,Fashion,3574.18
+895,1481,5,1,1614.65,1614.65,140,2024-04-12,Delivered,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,USB-C Hub,Electronics,1614.65
+896,1481,35,1,1989.93,1989.93,140,2024-04-12,Delivered,Vivaan Nair,vivaan.nair140@example.com,Bengaluru,2025-07-30,Fiction Bestseller,Books,1989.93
+897,1482,40,1,5930.5,5930.5,147,2025-07-02,Cancelled,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Yoga Mat,Sports,5930.5
+898,1482,6,1,684.26,684.26,147,2025-07-02,Cancelled,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Power Bank 10000mAh,Electronics,684.26
+899,1482,38,1,2514.42,2514.42,147,2025-07-02,Cancelled,Krishna Patel,krishna.patel147@example.com,Pune,2025-04-09,Cookbook,Books,2514.42
+900,1483,42,2,3324.17,6648.34,96,2025-08-08,Processing,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Cricket Bat,Sports,3324.17
+901,1483,20,1,3574.18,3574.18,96,2025-08-08,Processing,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Sneakers,Fashion,3574.18
+902,1483,33,1,3368.07,3368.07,96,2025-08-08,Processing,Ayaan Pillai,ayaan.pillai96@example.com,Chennai,2025-10-03,Body Lotion 200ml,Beauty,3368.07
+903,1484,36,2,2041.15,4082.3,36,2025-11-28,Returned,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Self-Help Book,Books,2041.15
+904,1484,12,1,4082.85,4082.85,36,2025-11-28,Returned,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Women's Kurti,Fashion,4082.85
+905,1485,43,1,2567.5,2567.5,122,2024-02-20,Processing,Sneha Rao,sneha.rao122@example.com,Delhi,2024-09-08,Football,Sports,2567.5
+906,1485,30,2,1836.07,3672.14,122,2024-02-20,Processing,Sneha Rao,sneha.rao122@example.com,Delhi,2024-09-08,Sunscreen SPF50,Beauty,1836.07
+907,1486,37,1,5825.58,5825.58,11,2024-12-11,Shipped,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Children's Story Set,Books,5825.58
+908,1486,41,1,4516.64,4516.64,11,2024-12-11,Shipped,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Adjustable Dumbbell Set,Sports,2567.5
+909,1486,4,2,2035.58,4071.16,11,2024-12-11,Shipped,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Laptop Stand,Electronics,2035.58
+910,1486,34,2,2810.73,5621.46,11,2024-12-11,Shipped,Aadhya Joshi,aadhya.joshi11@example.com,Bengaluru,2025-01-14,Shampoo 340ml,Beauty,2810.73
+911,1487,27,2,5167.74,10335.48,51,2024-08-21,Delivered,Karthik Pillai,karthik.pillai51@example.com,Delhi,2024-09-24,Ceramic Dinner Set,Home & Kitchen,5167.74
+912,1487,18,1,5509.03,5509.03,51,2024-08-21,Delivered,Karthik Pillai,karthik.pillai51@example.com,Delhi,2024-09-24,Women's Handbag,Fashion,5509.03
+913,1488,8,1,5040.36,5040.36,105,2024-10-02,Returned,Karthik Malhotra,karthik.malhotra105@example.com,Pune,2024-06-18,Wireless Mouse,Electronics,5040.36
+914,1489,20,1,3574.18,3574.18,58,2024-08-04,Returned,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Sneakers,Fashion,3574.18
+915,1489,30,1,1836.07,1836.07,58,2024-08-04,Returned,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Sunscreen SPF50,Beauty,1836.07
+916,1489,32,1,948.12,948.12,58,2024-08-04,Returned,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Hair Serum,Beauty,3089.4
+917,1490,43,1,2567.5,2567.5,36,2024-02-27,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Football,Sports,2567.5
+918,1490,36,2,2041.15,4082.3,36,2024-02-27,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Self-Help Book,Books,2041.15
+919,1490,12,1,4082.85,4082.85,36,2024-02-27,Delivered,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Women's Kurti,Fashion,4082.85
+920,1491,20,2,3574.18,7148.36,134,2025-08-05,Delivered,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Sneakers,Fashion,3574.18
+921,1492,24,1,2185.57,2185.57,30,2024-09-12,Delivered,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Air Fryer,Home & Kitchen,2185.57
+922,1493,9,1,3514.91,3514.91,102,2024-10-07,Cancelled,Ananya Patel,ananya.patel102@example.com,Kolkata,2025-02-03,Webcam HD,Electronics,3514.91
+923,1494,8,1,5040.36,5040.36,85,2024-05-06,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Wireless Mouse,Electronics,5040.36
+924,1494,34,2,2810.73,5621.46,85,2024-05-06,Delivered,Rahul Gupta,rahul.gupta85@example.com,Pune,2024-03-27,Shampoo 340ml,Beauty,2810.73
+925,1495,6,1,684.26,684.26,71,2025-08-23,Cancelled,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Power Bank 10000mAh,Electronics,684.26
+926,1495,16,1,2902.43,2902.43,71,2025-08-23,Cancelled,Aadhya Joshi,aadhya.joshi71@example.com,Mumbai,2024-08-21,Sunglasses,Fashion,2902.43
+927,1496,16,1,2902.43,2902.43,133,2025-12-06,Delivered,Myra Rao,myra.rao133@example.com,Pune,2025-08-26,Sunglasses,Fashion,2902.43
+928,1496,28,1,2079.35,2079.35,133,2025-12-06,Delivered,Myra Rao,myra.rao133@example.com,Pune,2025-08-26,Storage Organizer Box,Home & Kitchen,2079.35
+929,1497,38,1,2514.42,2514.42,75,2024-08-07,Delivered,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Cookbook,Books,2514.42
+930,1498,8,1,5040.36,5040.36,138,2025-10-29,Returned,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Wireless Mouse,Electronics,5040.36
+931,1498,21,1,3863.49,3863.49,138,2025-10-29,Returned,Aadhya Menon,aadhya.menon138@example.com,Bengaluru,2024-02-22,Non-Stick Pan Set,Home & Kitchen,3863.49
+932,1499,10,2,5712.1,11424.2,5,2025-04-30,Delivered,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Portable SSD 1TB,Electronics,5712.1
+933,1499,24,1,2185.57,2185.57,5,2025-04-30,Delivered,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Air Fryer,Home & Kitchen,2185.57
+934,1499,31,1,5679.38,5679.38,5,2025-04-30,Delivered,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Lip Balm Pack,Beauty,5679.38
+935,1500,4,3,2035.58,6106.74,5,2024-08-17,Shipped,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Laptop Stand,Electronics,2035.58
+936,1500,45,1,2266.41,2266.41,5,2024-08-17,Shipped,Varun Sharma,varun.sharma5@example.com,Kolkata,2024-06-12,Skipping Rope,Sports,2266.41
+937,1501,45,3,2266.41,6799.23,148,2024-10-08,Returned,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Skipping Rope,Sports,2266.41
+938,1501,24,1,2185.57,2185.57,148,2024-10-08,Returned,Ayaan Singh,ayaan.singh148@example.com,Delhi,2024-04-27,Air Fryer,Home & Kitchen,2185.57
+939,1502,1,3,620.58,1861.7400000000002,35,2024-09-15,Delivered,Aditya Verma,aditya.verma35@example.com,Mumbai,2024-03-10,Wireless Earbuds,Electronics,620.58
+940,1503,17,1,3961.33,3961.33,1,2025-02-10,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Formal Shirt,Fashion,3961.33
+941,1503,20,1,3574.18,3574.18,1,2025-02-10,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Sneakers,Fashion,3574.18
+942,1503,6,1,684.26,684.26,1,2025-02-10,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Power Bank 10000mAh,Electronics,684.26
+943,1503,16,1,2902.43,2902.43,1,2025-02-10,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Sunglasses,Fashion,2902.43
+944,1504,6,2,684.26,1368.52,36,2025-07-28,Shipped,Aditya Pillai,aditya.pillai36@example.com,Mumbai,2024-10-12,Power Bank 10000mAh,Electronics,684.26
+945,1505,27,2,5167.74,10335.48,142,2025-10-17,Cancelled,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Ceramic Dinner Set,Home & Kitchen,5167.74
+946,1505,22,2,3026.6,6053.2,142,2025-10-17,Cancelled,Kabir Pillai,kabir.pillai142@example.com,Delhi,2025-04-06,Electric Kettle,Home & Kitchen,3026.6
+947,1506,33,1,3368.07,3368.07,69,2024-07-11,Delivered,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,Body Lotion 200ml,Beauty,3368.07
+948,1506,5,2,1614.65,3229.3,69,2024-07-11,Delivered,Karthik Kapoor,karthik.kapoor69@example.com,Mumbai,2024-06-12,USB-C Hub,Electronics,1614.65
+949,1507,2,1,383.19,383.19,30,2025-09-06,Returned,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Bluetooth Speaker,Electronics,383.19
+950,1507,4,1,2035.58,2035.58,30,2025-09-06,Returned,Riya Nair,riya.nair30@example.com,Bengaluru,2025-11-06,Laptop Stand,Electronics,2035.58
+951,1508,13,1,1726.64,1726.64,14,2025-11-02,Processing,Riya Kapoor,riya.kapoor14@example.com,Pune,2024-11-28,Denim Jacket,Fashion,1726.64
+952,1509,11,1,5997.5,5997.5,34,2025-02-18,Returned,Diya Sharma,diya.sharma34@example.com,Hyderabad,2025-07-21,Men's Cotton T-Shirt,Fashion,5997.5
+953,1510,42,1,3324.17,3324.17,75,2024-07-13,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Cricket Bat,Sports,3324.17
+954,1510,9,1,3514.91,3514.91,75,2024-07-13,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Webcam HD,Electronics,3514.91
+955,1510,39,2,3160.39,6320.78,75,2024-07-13,Cancelled,Vivaan Reddy,vivaan.reddy75@example.com,Hyderabad,2025-03-20,Business Strategy Book,Books,3160.39
+956,1511,21,1,3863.49,3863.49,141,2025-10-15,Processing,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Non-Stick Pan Set,Home & Kitchen,3863.49
+957,1511,19,1,1211.71,1211.71,141,2025-10-15,Processing,Kabir Reddy,kabir.reddy141@example.com,Chennai,2025-03-02,Sports Cap,Fashion,1211.71
+958,1512,37,1,5825.58,5825.58,1,2024-11-03,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Children's Story Set,Books,5825.58
+959,1512,15,3,4574.17,13722.51,1,2024-11-03,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Leather Wallet,Fashion,4574.17
+960,1512,2,1,383.19,383.19,1,2024-11-03,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Bluetooth Speaker,Electronics,383.19
+961,1512,36,1,2041.15,2041.15,1,2024-11-03,Delivered,Rohan Reddy,rohan.reddy1@example.com,Bengaluru,2024-10-08,Self-Help Book,Books,2041.15
+962,1513,17,1,3961.33,3961.33,93,2024-10-27,Delivered,Anika Menon,anika.menon93@example.com,Kolkata,2025-03-29,Formal Shirt,Fashion,3961.33
+963,1514,37,1,5825.58,5825.58,58,2024-07-06,Cancelled,Sai Reddy,sai.reddy58@example.com,Pune,2025-07-20,Children's Story Set,Books,5825.58
+964,1515,30,2,1836.07,3672.14,115,2024-11-10,Returned,Aarav Patel,aarav.patel115@example.com,Hyderabad,2025-11-24,Sunscreen SPF50,Beauty,1836.07
+965,1516,14,1,385.36,385.36,134,2025-08-22,Shipped,Krishna Reddy,krishna.reddy134@example.com,Ahmedabad,2024-07-17,Running Shoes,Fashion,385.36
+966,1517,19,1,1211.71,1211.71,28,2025-10-11,Delivered,Ananya Patel,ananya.patel28@example.com,Mumbai,2024-02-29,Sports Cap,Fashion,1211.71
+967,1517,32,1,5971.96,5971.96,28,2025-10-11,Delivered,Ananya Patel,ananya.patel28@example.com,Mumbai,2024-02-29,Hair Serum,Beauty,3089.4
+968,1517,25,1,2099.85,2099.85,28,2025-10-11,Delivered,Ananya Patel,ananya.patel28@example.com,Mumbai,2024-02-29,Cotton Bedsheet Set,Home & Kitchen,2099.85
+969,1518,10,1,5712.1,5712.1,62,2025-11-28,Returned,Ayaan Gupta,ayaan.gupta62@example.com,Pune,2025-03-28,Portable SSD 1TB,Electronics,5712.1
+970,1519,29,3,2312.38,6937.14,78,2024-05-20,Delivered,Neha Singh,neha.singh78@example.com,Delhi,2025-03-17,Face Wash 100ml,Beauty,3089.4
+971,1520,1,1,620.58,620.58,91,2024-05-26,Cancelled,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Wireless Earbuds,Electronics,620.58
+972,1520,31,1,5679.38,5679.38,91,2024-05-26,Cancelled,Meera Pillai,meera.pillai91@example.com,Chennai,2024-02-21,Lip Balm Pack,Beauty,5679.38
