@@ -18,7 +18,7 @@ The system analyzes customer purchasing behavior and sales data to identify:
 The project uses Python for data cleaning and exploratory analysis and SQLite for relational data storage and SQL analysis.
 
 Project Structure
-
+'''text
 ecommerce-customer-intelligence/
 │
 ├── data/
@@ -51,7 +51,7 @@ ecommerce-customer-intelligence/
 │
 ├── run_all.py
 └── README.md
-
+'''
 Dataset
 
 The project uses synthetically generated e-commerce data so that the complete pipeline can run without downloading an external dataset.
