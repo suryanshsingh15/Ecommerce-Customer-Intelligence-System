@@ -1,82 +1,177 @@
-# E-Commerce Customer Intelligence System
+E-Commerce Customer Intelligence System
 
-Python | SQL | Pandas | NumPy | Statistics
+Python | SQL | Pandas | NumPy | SQLite | Statistics
 
-A complete, runnable project that matches the resume bullet points exactly:
+An end-to-end data analysis project for studying e-commerce customer, order, and product data using Python and SQL. The project covers data generation, cleaning, database creation, exploratory analysis, and SQL-based business analysis.
 
-- Analyzed customer purchasing behavior using SQL to identify revenue trends, top customers, repeat purchases, and product performance.
-- Designed and queried a relational database containing customer, order, and product data using JOINs, aggregations, subqueries, and CTEs.
-- Performed data cleaning and exploratory data analysis using Python, Pandas, and NumPy, handling missing values, duplicates, and inconsistent records.
+Project Overview
 
-## Project structure
+The system analyzes customer purchasing behavior and sales data to identify:
 
-```
+* Revenue trends
+* Top customers
+* Repeat purchases
+* Product and category performance
+* City-wise revenue
+* Order status and cancellation patterns
+
+The project uses Python for data cleaning and exploratory analysis and SQLite for relational data storage and SQL analysis.
+
+Project Structure
+
 ecommerce-customer-intelligence/
+│
 ├── data/
-│   ├── generate_data.py        # creates a realistic, intentionally "messy" raw dataset
-│   └── raw/                    # generated CSVs: customers, products, orders, order_items
+│   ├── generate_data.py
+│   └── raw/
+│       ├── customers.csv
+│       ├── products.csv
+│       ├── orders.csv
+│       └── order_items.csv
+│
 ├── database/
-│   ├── build_database.py       # loads raw CSVs into a SQLite relational database
-│   └── ecommerce.db            # SQLite database (raw_* tables + cleaned tables)
+│   ├── build_database.py
+│   └── ecommerce.db
+│
 ├── python/
-│   └── data_cleaning_eda.py    # Pandas/NumPy: cleaning + exploratory data analysis
+│   └── data_cleaning_eda.py
+│
 ├── sql/
-│   ├── analysis_queries.sql    # JOINs, aggregations, subqueries, CTEs, window functions
-│   └── run_queries.py          # executes every query and saves the results
+│   ├── analysis_queries.sql
+│   └── run_queries.py
+│
 ├── outputs/
-│   ├── eda_summary.txt              # full text report of the cleaning + EDA run
-│   ├── sql_query_results.txt        # output of every SQL query
-│   ├── clean_merged_dataset.csv     # final cleaned, analysis-ready dataset
+│   ├── eda_summary.txt
+│   ├── sql_query_results.txt
+│   ├── clean_merged_dataset.csv
 │   ├── 01_monthly_revenue_trend.png
 │   ├── 02_top_customers.png
 │   ├── 03_category_performance.png
 │   └── 04_order_value_distribution.png
-└── run_all.py                  # runs the entire pipeline end-to-end
-```
+│
+├── run_all.py
+└── README.md
 
-## How to run
+Dataset
 
-```bash
+The project uses synthetically generated e-commerce data so that the complete pipeline can run without downloading an external dataset.
+
+The generated dataset contains approximately:
+
+* 150 customers
+* 45 products
+* 520 orders
+* 970 order items
+
+The raw data contains intentionally introduced duplicates, missing values, and inconsistent formatting to provide realistic data-cleaning tasks.
+
+How to Run
+
+Install the required Python libraries:
+
 pip install pandas numpy matplotlib
+
+Then run the complete pipeline:
+
 python run_all.py
-```
 
-This will, in order:
-1. Generate a synthetic raw dataset (150 customers, 45 products, ~520 orders, ~970 order line items) with deliberately injected duplicates, missing values, and inconsistent formatting — so the cleaning step has real problems to fix.
-2. Load the raw CSVs into a SQLite database (`database/ecommerce.db`).
-3. Clean the data with Pandas/NumPy: removes exact duplicates, standardizes inconsistent city names and order-status casing, imputes missing prices from the category median, drops orders with unusable missing dates, removes invalid (negative) quantities, and rebuilds a merged analysis-ready dataset. Cleaned tables are written back to the database.
-4. Run exploratory data analysis (revenue stats, order value distribution, monthly trend, top customers, repeat-purchase rate, category performance) and save 4 charts plus a text summary to `outputs/`.
-5. Run the full SQL analysis file (`sql/analysis_queries.sql`) against the cleaned database and save results.
+The pipeline performs the following steps automatically.
 
-## What the SQL analysis covers
+Data Processing Pipeline
 
-| # | Query | SQL techniques used |
-|---|-------|---------------------|
-| 1 | Monthly revenue trend | JOIN, GROUP BY, aggregation |
-| 2 | Top 10 customers by revenue | multi-table JOIN, aggregation |
-| 3 | Repeat purchase rate & repeat customers | CTE (`WITH`), scalar subqueries |
-| 4 | Product performance (units sold, revenue) | JOIN, GROUP BY |
-| 5 | Category performance ranking | subquery + `RANK()` window function |
-| 6 | Above-average-spend customers | correlated subquery, `HAVING` |
-| 7 | City-wise revenue | JOIN, GROUP BY |
-| 8 | Order status / cancellation breakdown | aggregation, subquery |
+1. Generate Raw Data
 
-## What the Python cleaning/EDA covers
+Python generates customer, product, order, and order-item CSV files.
 
-- **Duplicates**: exact duplicate customer rows, duplicate `product_id`s, duplicate `order_id`s.
-- **Missing values**: blank emails (flagged), blank cities (set to "Unknown"), missing product prices (imputed via category median), missing order dates (dropped — cannot be safely imputed), missing line-item prices (filled from the product master).
-- **Inconsistent records**: city name variants (`"bengaluru"`, `"Bangalore"`, `"Bengaluru"` → standardized to `"Bengaluru"`), inconsistent order-status casing, invalid (zero/negative) order quantities, orphan foreign keys.
-- **EDA**: revenue totals, average order value, order-value distribution stats (mean/median/std via NumPy), monthly revenue trend, top customers, repeat-purchase rate, category/product performance, city-wise revenue — visualized in 4 charts.
+The raw data includes some duplicate records, missing values, and inconsistent values that are handled during the cleaning stage.
 
-## Sample results from this run
+2. Create SQLite Database
 
-- Total revenue (fulfilled orders): **Rs. 2,259,427.95**
-- Average Order Value: **Rs. 8,012.16**
-- Repeat customer rate: **77.0%**
-- Top category by revenue: **Fashion**
+The raw CSV files are loaded into a SQLite relational database:
 
-## Notes for adapting this to your resume / interview
+database/ecommerce.db
 
-- All data here is **synthetically generated** (see `data/generate_data.py`) so the project is fully self-contained and reproducible — no external dataset download needed. If you'd rather use a real public dataset (e.g., the "Olist" Brazilian e-commerce dataset or a Kaggle e-commerce dataset), swap the CSVs in `data/raw/` and keep the same schema; the cleaning, SQL, and EDA code will work unchanged.
-- Push this folder to GitHub as-is and link it from your resume/portfolio.
-- Be ready to explain the cleaning choices (why dates were dropped instead of imputed, why prices were imputed with category median, etc.) — interviewers often probe exactly these decisions.
+The database contains the tables required for customer, product, order, and order-item analysis.
+
+3. Data Cleaning
+
+Python, Pandas, and NumPy are used to clean the raw data.
+
+The cleaning process includes:
+
+* Removing exact duplicate records
+* Handling duplicate customer, product, and order IDs
+* Handling missing email and city values
+* Standardizing city names
+* Standardizing order-status values
+* Filling missing product prices using the category median
+* Filling missing line-item prices using the product information
+* Removing orders with unusable dates
+* Removing invalid zero or negative quantities
+* Checking for orphan foreign-key records
+* Creating a cleaned dataset for analysis
+
+The cleaned tables are also written back to the SQLite database.
+
+Exploratory Data Analysis
+
+The Python analysis calculates and summarizes:
+
+* Total revenue
+* Average order value
+* Order-value distribution
+* Monthly revenue trends
+* Top customers
+* Repeat-customer rate
+* Product performance
+* Category performance
+* City-wise revenue
+
+Four charts are generated and saved in the outputs/ directory.
+
+SQL Analysis
+
+The SQL analysis uses the cleaned SQLite database to answer common e-commerce business questions.
+
+#	Analysis	SQL Techniques
+1	Monthly revenue trend	JOIN, GROUP BY, aggregation
+2	Top 10 customers by revenue	Multi-table JOIN, aggregation
+3	Repeat purchase rate	CTE, scalar subquery
+4	Product performance	JOIN, GROUP BY
+5	Category performance ranking	Subquery, RANK() window function
+6	Above-average spending customers	Correlated subquery, HAVING
+7	City-wise revenue	JOIN, GROUP BY
+8	Order status and cancellation breakdown	Aggregation, subquery
+
+The SQL queries are stored in:
+
+sql/analysis_queries.sql
+
+The results are saved to:
+
+outputs/sql_query_results.txt
+
+Example Results
+
+Example results from the current generated dataset:
+
+* Total revenue from fulfilled orders: Rs. 2,259,427.95
+* Average order value: Rs. 8,012.16
+* Repeat customer rate: 77.0%
+* Top category by revenue: Fashion
+
+These values may change if the synthetic dataset is regenerated.
+
+Technologies Used
+
+* Python — data processing and analysis
+* Pandas — data cleaning and manipulation
+* NumPy — numerical calculations and statistics
+* Matplotlib — data visualization
+* SQL — business analysis and querying
+* SQLite — relational database
+* Git/GitHub — version control and project management
+
+Dataset Note
+
+All data in this project is synthetically generated. No real customer or personally identifiable information is used.
